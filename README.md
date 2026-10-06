@@ -2,1394 +2,1091 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- SEO Meta Tags -->
-    <title>SMART4GREEN 2026 | Seminario Internacional de Innovación para el Desarrollo Sostenible</title>
-    <meta name="description" content="Participa en SMART4GREEN 2026, seminario internacional con feria sobre investigación científica, inteligencia artificial, sostenibilidad, innovación tecnológica y emprendimiento organizado por ESPOCH Sede Morona Santiago.">
-    <meta name="keywords" content="SMART4GREEN 2026, desarrollo sostenible, inteligencia artificial, IoT, Amazonía, investigación científica, innovación tecnológica, congresos académicos, emprendimiento, sostenibilidad, ESPOCH">
+
+    <!-- SEO -->
+    <title>SMART4GREEN 2026 | I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible</title>
+    <meta name="description" content="SMART4GREEN 2026: 14 ponencias online el 16 y 17 de noviembre y feria presencial de emprendimientos el 17 de noviembre de 09h00 a 13h00. Organiza ESPOCH Sede Morona Santiago.">
+    <meta name="keywords" content="SMART4GREEN 2026, desarrollo sostenible, inteligencia artificial, IoT, Amazonía, investigación científica, innovación tecnológica, emprendimiento, sostenibilidad, ESPOCH, Morona Santiago">
     <meta name="author" content="ESPOCH Sede Morona Santiago">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0E3B2E">
+    <link rel="canonical" href="https://smart4green.espoch.edu.ec/">
 
-    <!-- Open Graph / Facebook / LinkedIn -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_EC">
     <meta property="og:url" content="https://smart4green.espoch.edu.ec/">
     <meta property="og:title" content="SMART4GREEN 2026 | I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible">
-    <meta property="og:description" content="17 de noviembre de 2026. Seminario modalidda híbrida y feria presencial de emprendimientos de 09h00 a 13h00.">
+    <meta property="og:description" content="16 y 17 de noviembre de 2026. Seminario online y feria presencial de emprendimientos de 09h00 a 13h00.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="SMART4GREEN 2026 | I Seminario Multidisciplinario">
-    <meta property="twitter:description" content="Seminario modalidad híbrida el 17 de noviembre de 2026; feria presencial de 09h00 a 13h00.">
-    <meta property="twitter:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SMART4GREEN 2026 | I Seminario Multidisciplinario">
+    <meta name="twitter:description" content="Seminario online el 16 y 17 de noviembre de 2026; feria presencial de 09h00 a 13h00.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
 
-    <!-- Favicon -->
     <link rel="icon" href="https://www.espoch.edu.ec/favicon.ico" type="image/x-icon">
 
-    <!-- Google Fonts -->
+    <!-- Datos estructurados del evento (mejoran la presencia en Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "SMART4GREEN 2026 – I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible",
+      "startDate": "2026-11-16T08:00:00-05:00",
+      "endDate": "2026-11-17T17:00:00-05:00",
+      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": [
+        { "@type": "VirtualLocation", "url": "https://smart4green.espoch.edu.ec/" },
+        { "@type": "Place", "name": "ESPOCH Sede Morona Santiago", "address": { "@type": "PostalAddress", "addressLocality": "Macas", "addressRegion": "Morona Santiago", "addressCountry": "EC" } }
+      ],
+      "organizer": { "@type": "Organization", "name": "Escuela Superior Politécnica de Chimborazo – Sede Morona Santiago", "url": "https://sedemacas.espoch.edu.ec/" },
+      "description": "Seminario online con 14 ponencias en siete ejes temáticos y feria presencial de emprendimientos."
+    }
+    </script>
+
+    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap 5.3 CSS -->
+    <!-- Bootstrap 5.3 + Font Awesome 6 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome 6 Pro / Free Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-    <!-- AOS (Animate On Scroll) Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom System CSS -->
     <style>
         :root {
-            --primary-green: #1B5E20;
-            --secondary-blue: #1565C0;
-            --accent-cyan: #4FC3F7;
-            --light-bg: #F8FAFC;
-            --dark-text: #0F172A;
-            --muted-text: #475569;
-            --white: #FFFFFF;
-            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            --forest-900: #0B2E24;
+            --forest-800: #0E3B2E;
+            --forest-700: #14523F;
+            --forest-600: #1B6B50;
+            --leaf-500: #2E9E6B;
+            --leaf-100: #E6F4EC;
+            --ocean-700: #0F4C81;
+            --ocean-100: #E7F0F8;
+            --gold-500: #D9A441;
+            --ink-900: #111827;
+            --ink-700: #374151;
+            --ink-500: #6B7280;
+            --line: #E5E7EB;
+            --surface: #FFFFFF;
+            --surface-alt: #F6F8F7;
+            --radius: 14px;
+            --shadow-sm: 0 1px 2px rgba(17, 24, 39, .06), 0 1px 3px rgba(17, 24, 39, .04);
+            --shadow-md: 0 10px 30px rgba(11, 46, 36, .08);
+            --ease: cubic-bezier(.4, 0, .2, 1);
+            --nav-h: 72px;
         }
 
+        html { scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-h) + 12px); }
         body {
-            font-family: 'Open Sans', sans-serif;
-            color: var(--dark-text);
-            background-color: var(--light-bg);
+            font-family: 'Inter', system-ui, sans-serif;
+            color: var(--ink-700);
+            background: var(--surface);
+            font-size: 1rem;
+            line-height: 1.65;
             overflow-x: hidden;
-            scroll-behavior: smooth;
         }
+        h1, h2, h3, h4, h5, h6, .brand { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--ink-900); letter-spacing: -.01em; }
+        a { color: var(--ocean-700); }
+        :focus-visible { outline: 3px solid var(--gold-500); outline-offset: 2px; }
 
-        h1, h2, h3, h4, h5, h6, .navbar-brand {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
+        .skip-link { position: absolute; left: -999px; top: 8px; background: #fff; padding: 8px 14px; border-radius: 8px; z-index: 2000; }
+        .skip-link:focus { left: 8px; }
+
+        /* ---------- Barra superior ---------- */
+        .top-bar { background: var(--forest-900); color: rgba(255,255,255,.85); font-size: .82rem; padding: 7px 0; }
+        .top-bar a { color: rgba(255,255,255,.85); text-decoration: none; }
+        .top-bar a:hover { color: #fff; }
+
+        /* ---------- Navegación ---------- */
+        .site-nav {
+            background: rgba(255,255,255,.92);
+            backdrop-filter: saturate(180%) blur(12px);
+            border-bottom: 1px solid transparent;
+            min-height: var(--nav-h);
+            transition: border-color .3s var(--ease), box-shadow .3s var(--ease);
         }
+        .site-nav.scrolled { border-color: var(--line); box-shadow: var(--shadow-sm); }
+        .brand { font-weight: 800; font-size: 1.35rem; color: var(--forest-700); text-decoration: none; line-height: 1; }
+        .brand span { color: var(--ocean-700); }
+        .brand small { display: block; font-family: 'Inter', sans-serif; font-size: .68rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-500); margin-top: 4px; }
+        .site-nav .nav-link { font-weight: 500; font-size: .92rem; color: var(--ink-700); padding: .5rem .75rem !important; border-radius: 8px; }
+        .site-nav .nav-link:hover { color: var(--forest-700); background: var(--leaf-100); }
+        .site-nav .nav-link.active { color: var(--forest-700); font-weight: 600; }
 
-        /* Topbar & Navbar */
-        .top-bar {
-            background-color: var(--primary-green);
-            color: var(--white);
-            font-size: 0.85rem;
-            padding: 6px 0;
+        /* ---------- Botones ---------- */
+        .btn-brand {
+            background: var(--forest-700); color: #fff; border: 0;
+            font-weight: 600; padding: .8rem 1.5rem; border-radius: 10px;
+            transition: background .2s var(--ease), transform .2s var(--ease);
         }
+        .btn-brand:hover { background: var(--forest-800); color: #fff; transform: translateY(-1px); }
+        .btn-gold { background: var(--gold-500); color: var(--forest-900); border: 0; font-weight: 700; padding: .8rem 1.5rem; border-radius: 10px; }
+        .btn-gold:hover { background: #C8922F; color: var(--forest-900); }
+        .btn-ghost { border: 1.5px solid rgba(255,255,255,.55); color: #fff; font-weight: 600; padding: .75rem 1.4rem; border-radius: 10px; }
+        .btn-ghost:hover { background: #fff; color: var(--forest-800); border-color: #fff; }
+        .btn-outline-brand { border: 1.5px solid var(--forest-700); color: var(--forest-700); font-weight: 600; border-radius: 10px; padding: .6rem 1.2rem; }
+        .btn-outline-brand:hover { background: var(--forest-700); color: #fff; }
 
-        .navbar {
-            background-color: rgba(255, 255, 255, 0.95);
+        /* ---------- Hero ---------- */
+        .hero {
+            position: relative;
+            color: #fff;
+            padding: 96px 0 88px;
+            background:
+                radial-gradient(1200px 500px at 85% -10%, rgba(46,158,107,.35), transparent 60%),
+                linear-gradient(160deg, rgba(11,46,36,.94) 0%, rgba(14,59,46,.90) 45%, rgba(15,76,129,.88) 100%),
+                url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=70') center/cover no-repeat;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: ''; position: absolute; inset: auto 0 0 0; height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,.25), transparent);
+        }
+        .eyebrow {
+            display: inline-flex; align-items: center; gap: .5rem;
+            font-size: .78rem; font-weight: 600; letter-spacing: .14em; text-transform: uppercase;
+            color: #BFE8D2; background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.18);
+            padding: .45rem .9rem; border-radius: 999px;
+        }
+        .hero h1 { color: #fff; font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 800; line-height: 1.05; margin: 1.25rem 0 1rem; }
+        .hero h1 .accent { color: #8FE0B5; }
+        .hero .lead { color: rgba(255,255,255,.88); font-size: clamp(1.05rem, 1.6vw, 1.25rem); max-width: 40rem; }
+        .hero .axes { color: rgba(255,255,255,.7); font-size: .9rem; letter-spacing: .04em; }
+
+        .hero-card {
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.16);
             backdrop-filter: blur(10px);
-            box-shadow: 0 2px 15px rgba(0,0,0,0.05);
-            transition: var(--transition);
+            border-radius: 18px;
+            padding: 1.75rem;
+        }
+        .hero-card dt { font-size: .72rem; text-transform: uppercase; letter-spacing: .12em; color: rgba(255,255,255,.6); font-weight: 600; }
+        .hero-card dd { color: #fff; font-weight: 500; margin-bottom: 1rem; }
+        .hero-card dd:last-of-type { margin-bottom: 0; }
+        .hero-card .icon { width: 36px; height: 36px; border-radius: 10px; background: rgba(143,224,181,.15); color: #8FE0B5; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+        .countdown { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; }
+        .countdown div { background: rgba(0,0,0,.18); border-radius: 12px; padding: .7rem .3rem; text-align: center; }
+        .countdown strong { display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 800; color: #fff; line-height: 1.1; font-variant-numeric: tabular-nums; }
+        .countdown span { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.65); }
+
+        /* ---------- Franja de datos clave ---------- */
+        .facts { background: var(--surface); border-bottom: 1px solid var(--line); }
+        .fact { display: flex; align-items: center; gap: .85rem; padding: 1.4rem 0; }
+        .fact i { width: 44px; height: 44px; border-radius: 12px; display: inline-flex; align-items: center; justify-content: center; background: var(--leaf-100); color: var(--forest-700); font-size: 1.1rem; flex-shrink: 0; }
+        .fact strong { display: block; color: var(--ink-900); font-weight: 600; font-size: .95rem; line-height: 1.3; }
+        .fact small { color: var(--ink-500); }
+
+        /* ---------- Secciones ---------- */
+        section { position: relative; }
+        .section { padding: 96px 0; }
+        .section-alt { background: var(--surface-alt); }
+        .kicker { display: inline-block; font-size: .78rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--leaf-500); margin-bottom: .75rem; }
+        .section-title { font-size: clamp(1.75rem, 3vw, 2.4rem); font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
+        .section-intro { color: var(--ink-500); font-size: 1.05rem; max-width: 44rem; }
+        .section-head { margin-bottom: 3rem; }
+        .section-head.center { text-align: center; }
+        .section-head.center .section-intro { margin-inline: auto; }
+
+        /* ---------- Acerca ---------- */
+        .project-item { display: flex; gap: 1rem; padding: 1.1rem 1.25rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+        .project-item i { color: var(--forest-700); font-size: 1.2rem; margin-top: .2rem; }
+        .project-item h3 { font-size: .95rem; font-weight: 700; margin-bottom: .2rem; }
+        .project-item p { font-size: .9rem; color: var(--ink-500); margin: 0; }
+        .audience { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+        .audience div { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.4rem 1.2rem; }
+        .audience i { color: var(--ocean-700); font-size: 1.4rem; margin-bottom: .75rem; display: block; }
+        .audience strong { color: var(--ink-900); font-weight: 600; font-size: .95rem; }
+
+        /* ---------- Ejes ---------- */
+        .axis-card {
+            height: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+            padding: 1.75rem; transition: border-color .25s var(--ease), box-shadow .25s var(--ease), transform .25s var(--ease);
+        }
+        .axis-card:hover { border-color: rgba(27,107,80,.35); box-shadow: var(--shadow-md); transform: translateY(-3px); }
+        .axis-num { font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: .8rem; color: var(--leaf-500); letter-spacing: .1em; }
+        .axis-icon { width: 52px; height: 52px; border-radius: 14px; background: var(--leaf-100); color: var(--forest-700); display: inline-flex; align-items: center; justify-content: center; font-size: 1.35rem; }
+        .axis-card h3 { font-size: 1.1rem; font-weight: 700; margin: 1.1rem 0 .5rem; }
+        .axis-card p { font-size: .92rem; color: var(--ink-500); margin: 0; }
+        .axis-card.featured { background: linear-gradient(135deg, var(--forest-800), var(--ocean-700)); border: 0; color: #fff; }
+        .axis-card.featured h3 { color: #fff; }
+        .axis-card.featured p { color: rgba(255,255,255,.8); }
+        .axis-card.featured .axis-icon { background: rgba(255,255,255,.12); color: #8FE0B5; }
+        .axis-card.featured .axis-num { color: #8FE0B5; }
+
+        /* ---------- Conferencistas ---------- */
+        .speaker { height: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; overflow: hidden; transition: box-shadow .25s var(--ease); }
+        .speaker:hover { box-shadow: var(--shadow-md); }
+        .speaker-photo { aspect-ratio: 4 / 3.4; background: linear-gradient(160deg, var(--leaf-100), var(--ocean-100)); position: relative; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .speaker-photo img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+        .speaker-photo .placeholder { font-size: 4rem; color: rgba(20,82,63,.35); }
+        .speaker-country { position: absolute; left: 14px; bottom: 14px; background: rgba(255,255,255,.95); color: var(--ink-900); font-size: .78rem; font-weight: 600; padding: .3rem .7rem; border-radius: 999px; box-shadow: var(--shadow-sm); }
+        .speaker-body { padding: 1.5rem; }
+        .speaker-body h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: .25rem; }
+        .speaker-body .affil { color: var(--ocean-700); font-weight: 500; font-size: .92rem; margin-bottom: 1rem; }
+        .speaker-body .meta { font-size: .88rem; color: var(--ink-500); border-top: 1px solid var(--line); padding-top: 1rem; margin: 0; }
+        .badge-soft { background: var(--leaf-100); color: var(--forest-700); font-weight: 600; font-size: .72rem; padding: .35rem .65rem; border-radius: 999px; }
+
+        /* ---------- Fechas ---------- */
+        .day-card { height: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 2rem; }
+        .day-date { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; }
+        .day-date .cal { width: 64px; text-align: center; border-radius: 12px; overflow: hidden; border: 1px solid var(--line); flex-shrink: 0; }
+        .day-date .cal span { display: block; background: var(--forest-700); color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .1em; padding: .2rem 0; }
+        .day-date .cal strong { display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 800; color: var(--ink-900); padding: .25rem 0; }
+        .day-date h3 { font-size: 1.15rem; font-weight: 700; margin: 0; }
+        .day-date small { color: var(--ink-500); }
+        .slot { display: flex; gap: .9rem; padding: .9rem 0; border-top: 1px dashed var(--line); }
+        .slot:first-of-type { border-top: 0; }
+        .slot .mode { font-size: .7rem; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; padding: .25rem .55rem; border-radius: 6px; height: fit-content; white-space: nowrap; }
+        .mode-online { background: var(--ocean-100); color: var(--ocean-700); }
+        .mode-onsite { background: #FBF1DE; color: #8A5D12; }
+        .slot strong { color: var(--ink-900); font-weight: 600; display: block; }
+        .slot p { margin: 0; color: var(--ink-500); font-size: .9rem; }
+
+        /* ---------- Feria ---------- */
+        .fair { background: linear-gradient(160deg, var(--forest-900), var(--forest-700)); color: #fff; border-radius: 24px; overflow: hidden; }
+        .fair h2, .fair h3 { color: #fff; }
+        .fair .kicker { color: #8FE0B5; }
+        .fair p, .fair li { color: rgba(255,255,255,.82); }
+        .fair-info { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.5rem 0; }
+        .fair-info span { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.15); font-size: .85rem; padding: .4rem .8rem; border-radius: 999px; }
+        .fair-areas { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; list-style: none; }
+        .fair-areas li { background: rgba(143,224,181,.12); color: #CFF1DE; font-size: .85rem; padding: .35rem .75rem; border-radius: 8px; }
+        .fair-panel { background: var(--surface); color: var(--ink-700); border-radius: 18px; padding: 2rem; height: 100%; }
+        .fair-panel h3 { color: var(--ink-900); font-size: 1.25rem; font-weight: 700; }
+        .fair-panel p { color: var(--ink-500); }
+        .step { display: flex; gap: .9rem; margin-bottom: 1.1rem; }
+        .step-n { width: 30px; height: 30px; border-radius: 50%; background: var(--leaf-100); color: var(--forest-700); font-weight: 700; font-size: .85rem; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .step p { margin: 0; color: var(--ink-700); font-size: .93rem; }
+
+        /* ---------- Programa ---------- */
+        .program-tabs { display: inline-flex; gap: .4rem; background: var(--surface-alt); border: 1px solid var(--line); border-radius: 12px; padding: .35rem; }
+        .program-tabs .nav-link { color: var(--ink-700); font-weight: 600; font-size: .92rem; border-radius: 9px; padding: .6rem 1.2rem; }
+        .program-tabs .nav-link.active { background: var(--forest-700); color: #fff; }
+        .agenda { border: 1px solid var(--line); border-radius: 16px; overflow: hidden; background: var(--surface); }
+        .agenda-row { display: grid; grid-template-columns: 150px 1fr; gap: 1rem; padding: 1rem 1.5rem; border-top: 1px solid var(--line); align-items: center; }
+        .agenda-row:first-child { border-top: 0; }
+        .agenda-row time { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--forest-700); font-size: .92rem; }
+        .agenda-row strong { color: var(--ink-900); font-weight: 600; }
+        .agenda-row .tbc { display: block; font-size: .85rem; color: var(--ink-500); }
+        .agenda-row.break { background: var(--surface-alt); }
+        .agenda-row.break strong { color: var(--ink-500); font-weight: 500; }
+        .agenda-row.break time { color: var(--ink-500); }
+        .agenda-row.key strong { color: var(--forest-700); }
+        .agenda-axis { padding: 1rem 1.5rem; background: var(--leaf-100); border-top: 1px solid var(--line); border-left: 4px solid var(--forest-600); }
+        .agenda-axis h4 { font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--forest-700); margin: 0 0 .15rem; }
+        .agenda-axis p { font-size: .87rem; color: var(--ink-700); margin: 0; }
+
+        /* ---------- Cifras ---------- */
+        .stats { background: var(--forest-900); color: #fff; padding: 72px 0; }
+        .stat-number { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(2.4rem, 4vw, 3.2rem); font-weight: 800; color: #8FE0B5; line-height: 1; }
+        .stat-label { color: rgba(255,255,255,.75); font-size: .95rem; margin-top: .5rem; }
+
+        /* ---------- Organizadores ---------- */
+        .group-title { font-size: .8rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-500); text-align: center; margin: 3.5rem 0 1.5rem; display: flex; align-items: center; gap: 1rem; }
+        .group-title::before, .group-title::after { content: ''; flex: 1; height: 1px; background: var(--line); }
+        .partner { height: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; text-align: center; transition: box-shadow .25s var(--ease), border-color .25s var(--ease); }
+        a.partner-link { text-decoration: none; color: inherit; display: block; height: 100%; }
+        a.partner-link:hover .partner { box-shadow: var(--shadow-md); border-color: rgba(27,107,80,.3); transform: translateY(-3px); }
+        .partner { transition: box-shadow .25s var(--ease), border-color .25s var(--ease), transform .25s var(--ease); }
+        .partner .visit { display: inline-block; margin-top: .9rem; font-size: .82rem; font-weight: 600; color: var(--forest-700); }
+        a.partner-link:hover .visit { text-decoration: underline; }
+        .partner-link.no-url { pointer-events: none; cursor: default; }
+        .partner-link.no-url .visit { display: none; }
+        .partner-logo { height: 96px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; }
+        .partner-logo img { max-width: 80%; max-height: 84px; object-fit: contain; }
+        .partner-logo i { font-size: 2.2rem; color: var(--forest-600); }
+        .partner h3 { font-size: 1rem; font-weight: 700; margin-bottom: .3rem; }
+        .partner p { font-size: .87rem; color: var(--ink-500); margin: 0; }
+        .partner.sponsor .partner-logo { height: 72px; margin-bottom: .6rem; }
+        .partner.sponsor h3 { font-size: .9rem; font-weight: 600; color: var(--ink-700); margin: 0; }
+
+        /* ---------- Contacto ---------- */
+        .contact-item { display: flex; gap: 1rem; align-items: flex-start; padding: 1.1rem 0; border-top: 1px solid var(--line); }
+        .contact-item:first-of-type { border-top: 0; }
+        .contact-item i { width: 42px; height: 42px; border-radius: 12px; background: var(--leaf-100); color: var(--forest-700); display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .contact-item strong { color: var(--ink-900); display: block; font-weight: 600; }
+        .contact-item a { text-decoration: none; word-break: break-word; }
+        .contact-item a:hover { text-decoration: underline; }
+        .cta-panel { background: linear-gradient(160deg, var(--forest-800), var(--ocean-700)); color: #fff; border-radius: 20px; padding: 2.5rem; height: 100%; }
+        .cta-panel h3 { color: #fff; font-weight: 800; }
+        .cta-panel p { color: rgba(255,255,255,.82); }
+
+        /* ---------- Footer ---------- */
+        footer { background: var(--forest-900); color: rgba(255,255,255,.7); font-size: .92rem; }
+        footer h4 { color: #fff; font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; font-weight: 700; margin-bottom: 1rem; }
+        footer a { color: rgba(255,255,255,.7); text-decoration: none; }
+        footer a:hover { color: #fff; }
+        footer ul { list-style: none; padding: 0; margin: 0; }
+        footer li { margin-bottom: .45rem; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,.1); font-size: .82rem; color: rgba(255,255,255,.5); }
+
+        /* ---------- Flotantes ---------- */
+        .whatsapp-float { position: fixed; right: 24px; bottom: 24px; width: 56px; height: 56px; border-radius: 50%; background: #25D366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.7rem; box-shadow: 0 8px 24px rgba(0,0,0,.2); z-index: 1000; text-decoration: none; transition: transform .2s var(--ease); }
+        .whatsapp-float:hover { color: #fff; transform: scale(1.06); }
+        .back-to-top { position: fixed; right: 30px; bottom: 92px; width: 44px; height: 44px; border-radius: 50%; background: var(--surface); color: var(--forest-700); border: 1px solid var(--line); box-shadow: var(--shadow-md); display: flex; align-items: center; justify-content: center; text-decoration: none; opacity: 0; visibility: hidden; transition: opacity .25s, visibility .25s; z-index: 999; }
+        .back-to-top.show { opacity: 1; visibility: visible; }
+
+        /* ---------- Animación de entrada (se desactiva si el usuario lo prefiere) ---------- */
+        .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+        .reveal.in { opacity: 1; transform: none; }
+        .no-js .reveal { opacity: 1; transform: none; }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            .reveal { opacity: 1; transform: none; transition: none; }
         }
 
-        .navbar-brand img {
-            height: 48px;
-            object-fit: contain;
+        @media (max-width: 991.98px) {
+            .site-nav .navbar-collapse { padding: 1rem 0; }
+            .hero { padding: 64px 0 64px; }
+            .section { padding: 72px 0; }
         }
-
-        .nav-link {
-            font-weight: 600;
-            color: var(--dark-text) !important;
-            font-size: 0.92rem;
-            padding: 0.5rem 0.8rem !important;
-            transition: var(--transition);
+        @media (max-width: 575.98px) {
+            .agenda-row { grid-template-columns: 1fr; gap: .2rem; padding: .9rem 1rem; }
+            .agenda-axis { padding: .9rem 1rem; }
+            .audience { grid-template-columns: 1fr 1fr; }
+            .countdown strong { font-size: 1.3rem; }
+            .fair-panel, .day-card, .cta-panel { padding: 1.5rem; }
+            .back-to-top { right: 30px; }
         }
-
-        .nav-link:hover, .nav-link.active {
-            color: var(--secondary-blue) !important;
-        }
-
-        /* Hero Section */
-        .hero-section {
-            position: relative;
-            min-height: 100vh;
-            background: linear-gradient(135deg, rgba(27, 94, 32, 0.88), rgba(21, 101, 192, 0.85)), 
-                        url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat fixed;
-            display: flex;
-            align-items: center;
-            color: var(--white);
-            padding-top: 100px;
-            padding-bottom: 60px;
-        }
-
-        .hero-title {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            letter-spacing: -1px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
-        }
-
-        .hero-badge {
-            background: rgba(79, 195, 247, 0.2);
-            border: 1px solid var(--accent-cyan);
-            color: #E0F7FA;
-            font-weight: 600;
-            padding: 8px 18px;
-            border-radius: 50px;
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            backdrop-filter: blur(5px);
-        }
-
-        /* Countdown Component */
-        .countdown-container {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin: 2rem 0;
-        }
-
-        .countdown-box {
-            background: rgba(255, 255, 255, 0.12);
-            backdrop-filter: blur(8px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            border-radius: 12px;
-            padding: 12px 18px;
-            min-width: 80px;
-            text-align: center;
-        }
-
-        .countdown-num {
-            font-size: 1.8rem;
-            font-weight: 800;
-            color: var(--accent-cyan);
-            display: block;
-            line-height: 1;
-        }
-
-        .countdown-label {
-            font-size: 0.75rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 5px;
-        }
-
-        /* Buttons Styling */
-        .btn-custom-primary {
-            background-color: #2E7D32;
-            color: var(--white);
-            border: none;
-            font-weight: 700;
-            padding: 12px 28px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.4);
-            transition: var(--transition);
-        }
-
-        .btn-custom-primary:hover {
-            background-color: #1B5E20;
-            color: var(--white);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.6);
-        }
-
-        .btn-custom-secondary {
-            background-color: var(--secondary-blue);
-            color: var(--white);
-            border: none;
-            font-weight: 700;
-            padding: 12px 28px;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(21, 101, 192, 0.4);
-            transition: var(--transition);
-        }
-
-        .btn-custom-secondary:hover {
-            background-color: #0D47A1;
-            color: var(--white);
-            transform: translateY(-2px);
-        }
-
-        .btn-custom-outline {
-            border: 2px solid var(--white);
-            color: var(--white);
-            font-weight: 700;
-            padding: 10px 26px;
-            border-radius: 8px;
-            transition: var(--transition);
-        }
-
-        .btn-custom-outline:hover {
-            background: var(--white);
-            color: var(--primary-green);
-        }
-
-        /* Section Title Styling */
-        .section-header {
-            text-align: center;
-            margin-bottom: 3.5rem;
-        }
-
-        .section-subtitle {
-            color: var(--secondary-blue);
-            text-transform: uppercase;
-            font-weight: 700;
-            font-size: 0.85rem;
-            letter-spacing: 2px;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .section-title {
-            font-size: 2.2rem;
-            color: var(--dark-text);
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title::after {
-            content: '';
-            width: 60px;
-            height: 4px;
-            background: var(--primary-green);
-            display: block;
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
-
-        /* Cards & Features */
-        .feature-card {
-            background: var(--white);
-            border-radius: 16px;
-            padding: 2rem;
-            height: 100%;
-            box-shadow: var(--card-shadow);
-            border: 1px solid rgba(0,0,0,0.03);
-            transition: var(--transition);
-        }
-
-        .feature-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
-        }
-
-        .feature-icon {
-            width: 65px;
-            height: 65px;
-            border-radius: 12px;
-            background: rgba(21, 101, 192, 0.08);
-            color: var(--secondary-blue);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            transition: var(--transition);
-        }
-
-        .feature-card:hover .feature-icon {
-            background: var(--secondary-blue);
-            color: var(--white);
-        }
-
-        /* Keynote Speakers IEEE Style */
-        .speaker-card {
-            background: var(--white);
-            border-radius: 16px;
-            overflow: hidden;
-            box-shadow: var(--card-shadow);
-            transition: var(--transition);
-            border: 1px solid #E2E8F0;
-        }
-
-        .speaker-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .speaker-img-wrapper {
-            position: relative;
-            height: 280px;
-            overflow: hidden;
-            background-color: #E2E8F0;
-        }
-
-        .speaker-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .speaker-card:hover .speaker-img {
-            transform: scale(1.05);
-        }
-
-        .speaker-flag {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 1.5rem;
-            background: rgba(255,255,255,0.9);
-            padding: 4px 10px;
-            border-radius: 20px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-
-        /* Timeline Component */
-        .timeline {
-            position: relative;
-            padding: 2rem 0;
-        }
-
-        .timeline::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            width: 4px;
-            height: 100%;
-            background: #E2E8F0;
-            transform: translateX(-50%);
-        }
-
-        .timeline-item {
-            margin-bottom: 2.5rem;
-            position: relative;
-            width: 50%;
-        }
-
-        .timeline-item:nth-child(odd) {
-            left: 0;
-            padding-right: 40px;
-            text-align: right;
-        }
-
-        .timeline-item:nth-child(even) {
-            left: 50%;
-            padding-left: 40px;
-        }
-
-        .timeline-dot {
-            width: 20px;
-            height: 20px;
-            background: var(--primary-green);
-            border: 4px solid var(--white);
-            border-radius: 50%;
-            position: absolute;
-            top: 15px;
-            box-shadow: 0 0 0 4px rgba(27, 94, 32, 0.2);
-        }
-
-        .timeline-item:nth-child(odd) .timeline-dot {
-            right: -10px;
-        }
-
-        .timeline-item:nth-child(even) .timeline-dot {
-            left: -10px;
-        }
-
-        .timeline-content {
-            background: var(--white);
-            padding: 1.5rem;
-            border-radius: 12px;
-            box-shadow: var(--card-shadow);
-        }
-
-        /* Statistics Counter Section */
-        .stats-section {
-            background: linear-gradient(135deg, var(--primary-green), #0D47A1);
-            color: var(--white);
-            padding: 5rem 0;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--accent-cyan);
-        }
-
-        /* Floating WhatsApp Button */
-        .whatsapp-float {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            transition: var(--transition);
-        }
-
-        .whatsapp-float:hover {
-            transform: scale(1.1);
-            color: var(--white);
-        }
-
-        /* Scroll to Top */
-        .back-to-top {
-            position: fixed;
-            bottom: 30px;
-            right: 100px;
-            width: 45px;
-            height: 45px;
-            background-color: var(--secondary-blue);
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
-            z-index: 999;
-        }
-
-        .back-to-top.active {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        /* Media Queries for Timeline Responsive */
-        @media (max-width: 768px) {
-            .timeline::before {
-                left: 20px;
-            }
-            .timeline-item {
-                width: 100% !important;
-                padding-left: 50px !important;
-                padding-right: 0 !important;
-                text-align: left !important;
-            }
-            .timeline-item:nth-child(even) {
-                left: 0;
-            }
-            .timeline-item:nth-child(odd) .timeline-dot,
-            .timeline-item:nth-child(even) .timeline-dot {
-                left: 10px;
-            }
-            .back-to-top {
-                right: 20px;
-                bottom: 100px;
-            }
-        }
-
-        /* Logotipos de organizadores, proyectos, redes y grupos */
-        .partner-card { height: 100%; background: #fff; border: 1px solid #e3e9e5; border-radius: 1rem; padding: 1.5rem; box-shadow: 0 5px 18px rgba(0,0,0,.05); text-align: center; }
-        .partner-logo-box { height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; border-radius: .75rem; background: #f5f9f6; }
-        .partner-logo-box img { display: block; max-width: 85%; max-height: 78px; object-fit: contain; }
-        .partner-logo-box i { font-size: 2.3rem; color: #1b5e20; }
     </style>
 </head>
-<body>
+<body class="no-js">
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-    <!-- TOPBAR -->
-    <div class="top-bar">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div>
-                <i class="fa-solid fa-graduation-cap me-2"></i> ESPOCH Sede Morona Santiago | Seminario · 17 de noviembre de 2026
+<!-- BARRA SUPERIOR -->
+<div class="top-bar">
+    <div class="container d-flex justify-content-between align-items-center gap-3">
+        <div><i class="fa-solid fa-graduation-cap me-2" aria-hidden="true"></i>ESPOCH Sede Morona Santiago</div>
+        <div class="d-none d-md-flex gap-4">
+            <a href="https://sedemacas.espoch.edu.ec/" target="_blank" rel="noopener"><i class="fa-solid fa-globe me-1" aria-hidden="true"></i>sedemacas.espoch.edu.ec</a>
+            <a href="https://www.facebook.com/espochms?locale=es_LA" target="_blank" rel="noopener" aria-label="Facebook ESPOCH Sede Morona Santiago"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- NAVEGACIÓN -->
+<nav class="navbar navbar-expand-lg sticky-top site-nav" id="siteNav" aria-label="Navegación principal">
+    <div class="container">
+        <a class="brand" href="#inicio">SMART<span>4GREEN</span><small>2026 · ESPOCH</small></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+                <li class="nav-item"><a class="nav-link" href="#acerca">Acerca</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ejes">Ejes</a></li>
+                <li class="nav-item"><a class="nav-link" href="#speakers">Conferencistas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#fechas">Fechas</a></li>
+                <li class="nav-item"><a class="nav-link" href="#emprendimiento">Feria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#programa">Programa</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                    <a href="#emprendimiento" class="btn btn-brand py-2 px-3">Feria de emprendimientos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main id="contenido">
+
+<!-- HERO -->
+<header id="inicio" class="hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+                <span class="eyebrow"><i class="fa-solid fa-leaf" aria-hidden="true"></i>I Edición · 16 y 17 de noviembre de 2026</span>
+                <h1>SMART<span class="accent">4GREEN</span> 2026</h1>
+                <p class="lead mb-3">I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible</p>
+                <p class="axes mb-4">Tecnología · Producción · Economía · Sociedad · Ambiente</p>
+                <div class="d-flex flex-wrap gap-3">
+                    <a href="https://forms.gle/oieuCepQ93R2p2tTA" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-lg">
+                        Inscripción general <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i>
+                    </a>
+                    <a href="#programa" class="btn btn-ghost btn-lg">Ver programa</a>
+                </div>
             </div>
-            <div class="d-none d-md-block">
-                <i class="fa-regular fa-envelope me-1"></i> investigo@istra.edu.ec
+            <div class="col-lg-5">
+                <div class="hero-card">
+                    <dl class="mb-4">
+                        <div class="d-flex gap-3 mb-3">
+                            <span class="icon"><i class="fa-solid fa-video" aria-hidden="true"></i></span>
+                            <div><dt>Seminario online</dt><dd>16 y 17 de noviembre · 14 ponencias</dd></div>
+                        </div>
+                        <div class="d-flex gap-3 mb-3">
+                            <span class="icon"><i class="fa-solid fa-store" aria-hidden="true"></i></span>
+                            <div><dt>Feria presencial</dt><dd>Martes 17 · 09h00–13h00 · Lugar por confirmar</dd></div>
+                        </div>
+                        <div class="d-flex gap-3">
+                            <span class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+                            <div><dt>Organiza</dt><dd>ESPOCH Sede Morona Santiago · Macas</dd></div>
+                        </div>
+                    </dl>
+                    <p class="small text-uppercase fw-semibold mb-2" style="letter-spacing:.12em;color:rgba(255,255,255,.6)" id="countdownLabel">Faltan</p>
+                    <div class="countdown" id="countdown" aria-live="polite">
+                        <div><strong id="days">00</strong><span>Días</span></div>
+                        <div><strong id="hours">00</strong><span>Horas</span></div>
+                        <div><strong id="minutes">00</strong><span>Min</span></div>
+                        <div><strong id="seconds">00</strong><span>Seg</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</header>
 
-    <!-- NAVBAR STICKY -->
-    <nav class="navbar navbar-expand-lg sticky-top navbar-light">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-                <span class="fw-extrabold text-success fs-4">SMART<span class="text-primary">4GREEN</span></span>
-                <span class="badge bg-primary text-wrap text-start" style="font-size: 0.65rem;">2026</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center gap-1">
-                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#acerca">Acerca de</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#ejes">Ejes Temáticos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#speakers">Speakers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#callforpapers">Call for Papers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#fechas">Fechas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#emprendimiento">Feria Emprendimiento</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#programa">Programa</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                    <li class="nav-item ms-lg-2">
-                        <a href="#callforpapers" class="btn btn-custom-primary btn-sm rounded-pill px-3">Enviar Manuscrito</a>
-                    </li>
+<!-- DATOS CLAVE -->
+<section class="facts" aria-label="Datos clave">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-lg-3"><div class="fact"><i class="fa-regular fa-calendar" aria-hidden="true"></i><div><strong>16–17 nov. 2026</strong><small>Dos jornadas</small></div></div></div>
+            <div class="col-6 col-lg-3"><div class="fact"><i class="fa-solid fa-laptop" aria-hidden="true"></i><div><strong>Modalidad híbrida</strong><small>Online + feria presencial</small></div></div></div>
+            <div class="col-6 col-lg-3"><div class="fact"><i class="fa-solid fa-microchip" aria-hidden="true"></i><div><strong>IA e IoT</strong><small>Aplicados a la sostenibilidad</small></div></div></div>
+            <div class="col-6 col-lg-3"><div class="fact"><i class="fa-solid fa-people-arrows" aria-hidden="true"></i><div><strong>Networking académico</strong><small>Investigación y empresa</small></div></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ACERCA -->
+<section id="acerca" class="section">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+            <div class="col-lg-6 reveal">
+                <span class="kicker">Sobre el evento</span>
+                <h2 class="section-title">Investigación científica al servicio de la sostenibilidad amazónica</h2>
+                <p>
+                    <strong>SMART4GREEN 2026</strong> es un espacio multidisciplinario e internacional que articula la investigación académica con el desarrollo sostenible, en diálogo entre el contexto global y la realidad regional amazónica.
+                </p>
+                <p>
+                    A lo largo de dos jornadas, investigadores, docentes, estudiantes, profesionales y emprendedores comparten avances, experiencias y propuestas en tecnología, ambiente, producción, economía y sociedad, con el propósito de generar soluciones innovadoras para el territorio.
+                </p>
+                <div class="project-item mt-4">
+                    <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                    <div>
+                        <h3>Organiza</h3>
+                        <p>Escuela Superior Politécnica de Chimborazo (ESPOCH) · Sede Morona Santiago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 reveal">
+                <div class="p-4 p-md-5 rounded-4 section-alt">
+                    <span class="kicker">Dirigido a</span>
+                    <h3 class="h4 fw-bold mb-4">Público objetivo</h3>
+                    <div class="audience">
+                        <div><i class="fa-solid fa-user-graduate" aria-hidden="true"></i><strong>Investigadores y docentes</strong></div>
+                        <div><i class="fa-solid fa-book-open-reader" aria-hidden="true"></i><strong>Estudiantes</strong></div>
+                        <div><i class="fa-solid fa-briefcase" aria-hidden="true"></i><strong>Profesionales y empresas</strong></div>
+                        <div><i class="fa-solid fa-building-columns" aria-hidden="true"></i><strong>Instituciones públicas y privadas</strong></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- EJES TEMÁTICOS -->
+<section id="ejes" class="section section-alt">
+    <div class="container">
+        <div class="section-head center reveal">
+            <span class="kicker">Áreas de investigación</span>
+            <h2 class="section-title">Siete ejes temáticos</h2>
+            <p class="section-intro">Las ponencias se organizan en siete líneas que conectan tecnología, territorio, economía y sociedad.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 reveal"><article class="axis-card">
+                <div class="d-flex justify-content-between align-items-start"><span class="axis-icon"><i class="fa-solid fa-robot" aria-hidden="true"></i></span><span class="axis-num">EJE 01</span></div>
+                <h3>Tecnología, IA y digitalización</h3>
+                <p>Inteligencia artificial, Internet de las Cosas, transformación digital y Big Data aplicados al desarrollo.</p>
+            </article></div>
+            <div class="col-md-6 col-lg-4 reveal"><article class="axis-card">
+                <div class="d-flex justify-content-between align-items-start"><span class="axis-icon"><i class="fa-solid fa-leaf" aria-hidden="true"></i></span><span class="axis-num">EJE 02</span></div>
+                <h3>Ambiente y sostenibilidad</h3>
+                <p>Monitoreo ambiental, conservación de la biodiversidad, cambio climático y resiliencia ecológica.</p>
+            </article></div>
+            <div class="col-md-6 col-lg-4 reveal"><article class="axis-card">
+                <div class="d-flex justify-content-between align-items-start"><span class="axis-icon"><i class="fa-solid fa-gem" aria-hidden="true"></i></span><span class="axis-num">EJE 03</span></div>
+                <h3>Recursos naturales y territorio</h3>
+                <p>Minería responsable, gestión territorial sostenible y preservación de cuencas hidrográficas.</p>
+            </article></div>
+            <div class="col-md-6 col-lg-4 reveal"><article class="axis-card">
+                <div class="d-flex justify-content-between align-items-start"><span class="axis-icon"><i class="fa-solid fa-wheat-awn" aria-hidden="true"></i></span><span class="axis-num">EJE 04</span></div>
+                <h3>Producción y zootecnia</h3>
+                <p>Agropecuaria de precisión y sistemas agroforestales sostenibles.</p>
+            </article></div>
+            <div class="col-md-6 col-lg-4 reveal"><article class="axis-card">
+                <div class="d-flex justify-content-between align-items-start"><span class="axis-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></span><span class="axis-num">EJE 05</span></div>
+                <h3>Economía y negocios sostenibles</h3>
+                <p>Economía circular, contabilidad, finanzas verdes y modelos de negocio sustentables.</p>
+            </article></div>
+            <div class="col-md-6 col-lg-4 reveal"><article class="axis-card">
+                <div class="d-flex justify-content-between align-items-start"><span class="axis-icon"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i></span><span class="axis-num">EJE 06</span></div>
+                <h3>Derecho, sociedad y gobernanza</h3>
+                <p>Políticas públicas, bioética, gobernanza territorial y legislación ambiental.</p>
+            </article></div>
+            <div class="col-12 reveal"><article class="axis-card featured">
+                <div class="row align-items-center g-4">
+                    <div class="col-md-8">
+                        <div class="d-flex align-items-center gap-3"><span class="axis-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></span><span class="axis-num">EJE 07</span></div>
+                        <h3>Innovación, emprendimiento y desarrollo sostenible</h3>
+                        <p>Transferencia tecnológica, incubación de empresas sostenibles y soluciones innovadoras para comunidades amazónicas.</p>
+                    </div>
+                    <div class="col-md-4 text-md-end">
+                        <a href="#emprendimiento" class="btn btn-gold">Conoce la feria <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </article></div>
+        </div>
+    </div>
+</section>
+
+<!-- CONFERENCISTAS -->
+<section id="speakers" class="section">
+    <div class="container">
+        <div class="section-head center reveal">
+            <span class="kicker">Keynote speakers</span>
+            <h2 class="section-title">Conferencistas invitados</h2>
+            <p class="section-intro">La asignación de horarios y temas se confirmará en el programa académico.</p>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 reveal">
+                <article class="speaker">
+                    <div class="speaker-photo">
+                        <img src="assets/omar.jpg" alt="Ing. Omar Delgado, PhD." loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                        <span class="speaker-country">🇮🇹 Italia</span>
+                    </div>
+                    <div class="speaker-body">
+                        <h3>Ing. Omar Delgado, PhD.</h3>
+                        <p class="affil">Università della Calabria</p>
+                        <p class="meta"><strong>Especialidad:</strong> Inteligencia artificial, sistemas inteligentes, transformación digital y tecnologías emergentes.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+                <article class="speaker">
+                    <div class="speaker-photo"><i class="fa-solid fa-user placeholder" aria-hidden="true"></i></div>
+                    <div class="speaker-body">
+                        <span class="badge-soft mb-2 d-inline-block">Por confirmar</span>
+                        <h3>Conferencista invitado</h3>
+                        <p class="affil">Afiliación por confirmar</p>
+                        <p class="meta"><strong>Tema:</strong> Por confirmar.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+                <article class="speaker">
+                    <div class="speaker-photo"><i class="fa-solid fa-user placeholder" aria-hidden="true"></i></div>
+                    <div class="speaker-body">
+                        <span class="badge-soft mb-2 d-inline-block">Por confirmar</span>
+                        <h3>Conferencista invitado</h3>
+                        <p class="affil">Afiliación por confirmar</p>
+                        <p class="meta"><strong>Tema:</strong> Por confirmar.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FECHAS -->
+<section id="fechas" class="section section-alt">
+    <div class="container">
+        <div class="section-head center reveal">
+            <span class="kicker">Calendario</span>
+            <h2 class="section-title">Dos jornadas de intercambio académico</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 reveal">
+                <div class="day-card">
+                    <div class="day-date">
+                        <div class="cal"><span>NOV</span><strong>16</strong></div>
+                        <div><h3>Lunes 16 de noviembre</h3><small>Jornada 1</small></div>
+                    </div>
+                    <div class="slot"><span class="mode mode-online">Online</span><div><strong>08h00 – 12h00 y 14h00 – 18h00</strong><p>Registro, inauguración y ponencias de los ejes 1 al 6.</p></div></div>
+                </div>
+            </div>
+            <div class="col-md-6 reveal">
+                <div class="day-card">
+                    <div class="day-date">
+                        <div class="cal"><span>NOV</span><strong>17</strong></div>
+                        <div><h3>Martes 17 de noviembre</h3><small>Jornada 2</small></div>
+                    </div>
+                    <div class="slot"><span class="mode mode-onsite">Presencial</span><div><strong>09h00 – 13h00</strong><p>Feria de Emprendimientos · Lugar por confirmar.</p></div></div>
+                    <div class="slot"><span class="mode mode-online">Online</span><div><strong>15h00 – 17h00</strong><p>Ponencias del eje 7, conclusiones y clausura.</p></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FERIA DE EMPRENDIMIENTOS -->
+<section id="emprendimiento" class="section">
+    <div class="container">
+        <div class="fair p-4 p-md-5 reveal">
+            <div class="row g-5 align-items-stretch">
+                <div class="col-lg-6">
+                    <span class="kicker">I Feria de Emprendimientos SMART4GREEN 2026</span>
+                    <h2 class="section-title">Convierte una idea en una solución para el futuro</h2>
+                    <p>Un espacio para presentar ideas de negocio, proyectos innovadores y soluciones con potencial de impacto, vinculadas con la sostenibilidad, la tecnología, la producción, la economía, la sociedad y el ambiente.</p>
+                    <div class="fair-info">
+                        <span><i class="fa-regular fa-calendar me-1" aria-hidden="true"></i>17 de noviembre</span>
+                        <span><i class="fa-regular fa-clock me-1" aria-hidden="true"></i>09h00–13h00</span>
+                        <span><i class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Presencial · lugar por confirmar</span>
+                        <span><i class="fa-solid fa-users me-1" aria-hidden="true"></i>Equipos de hasta 4 integrantes</span>
+                    </div>
+                    <h3 class="h6 fw-bold text-uppercase mb-3" style="letter-spacing:.1em">Áreas de participación</h3>
+                    <ul class="fair-areas">
+                        <li>Sostenibilidad y ambiente</li>
+                        <li>Tecnología e innovación</li>
+                        <li>Producción y agroindustria</li>
+                        <li>Minería sostenible</li>
+                        <li>Economía y negocios</li>
+                        <li>Innovación social y jurídica</li>
+                    </ul>
+                    <p class="small mt-3 mb-0">Pueden participar estudiantes, docentes, investigadores y emprendedores.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fair-panel">
+                        <span class="badge-soft d-inline-block mb-3"><i class="fa-solid fa-circle me-1" style="font-size:.5rem;vertical-align:middle" aria-hidden="true"></i>Inscripciones abiertas</span>
+                        <h3 class="mb-3">¿Cómo participar?</h3>
+                        <div class="step"><span class="step-n">1</span><p>Descarga el formato obligatorio y redacta tu propuesta ejecutiva.</p></div>
+                        <div class="step"><span class="step-n">2</span><p>Guárdala en PDF.</p></div>
+                        <div class="step"><span class="step-n">3</span><p>Completa el formulario de inscripción y adjunta el PDF. Google puede pedirte iniciar sesión para subir el archivo.</p></div>
+                        <div class="d-flex flex-wrap gap-2 mt-4">
+                            <a href="https://forms.gle/fv8FkEfTR3pD16yw5" target="_blank" rel="noopener noreferrer" class="btn btn-brand">
+                                Inscribirme en la feria <i class="fa-solid fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i>
+                            </a>
+                            <a href="documentos/Plantilla_Feria_Emprendimientos_SMART4GREEN_2026.docx" class="btn btn-outline-brand" download>
+                                <i class="fa-solid fa-file-word me-2" aria-hidden="true"></i>Descargar formato
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROGRAMA -->
+<section id="programa" class="section section-alt">
+    <div class="container">
+        <div class="section-head center reveal">
+            <span class="kicker">16 y 17 de noviembre · Hora de Ecuador (UTC−5)</span>
+            <h2 class="section-title">Programa de ponencias</h2>
+            <p class="section-intro">14 ponencias de 30 minutos en modalidad online, organizadas en siete ejes temáticos. Los nombres de los conferencistas y los títulos se actualizarán conforme se confirme su participación.</p>
+        </div>
+
+        <div class="text-center mb-4">
+            <ul class="nav program-tabs" role="tablist">
+                <li class="nav-item" role="presentation"><button class="nav-link active" id="tab-d1" data-bs-toggle="tab" data-bs-target="#dia1" type="button" role="tab" aria-controls="dia1" aria-selected="true">Día 1 · Lun 16</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" id="tab-d2" data-bs-toggle="tab" data-bs-target="#dia2" type="button" role="tab" aria-controls="dia2" aria-selected="false">Día 2 · Mar 17</button></li>
+            </ul>
+        </div>
+
+        <div class="tab-content" style="max-width: 920px; margin: 0 auto;">
+            <!-- DÍA 1 -->
+            <div class="tab-pane fade show active" id="dia1" role="tabpanel" aria-labelledby="tab-d1">
+                <div class="agenda">
+                    <div class="agenda-row key"><time>08:00 – 09:00</time><strong>Registro e inauguración del I Seminario SMART4GREEN 2026</strong></div>
+
+                    <div class="agenda-axis"><h4>Eje 1 · Tecnología, IA y digitalización</h4><p>Inteligencia artificial, IoT, transformación digital y Big Data aplicados al desarrollo.</p></div>
+                    <div class="agenda-row"><time>09:00 – 09:30</time><div><strong>Ponencia 1</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>09:30 – 10:00</time><div><strong>Ponencia 2</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>10:00 – 10:30</time><div><strong>Ponencia 3</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row break"><time>10:30 – 11:00</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
+
+                    <div class="agenda-axis"><h4>Eje 2 · Ambiente y sostenibilidad</h4><p>Monitoreo ambiental, conservación de la biodiversidad, cambio climático y resiliencia ecológica.</p></div>
+                    <div class="agenda-row"><time>11:00 – 11:30</time><div><strong>Ponencia 4</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>11:30 – 12:00</time><div><strong>Ponencia 5</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row break"><time>12:00 – 14:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso para el almuerzo</strong></div>
+
+                    <div class="agenda-axis"><h4>Eje 3 · Recursos naturales y territorio</h4><p>Minería responsable, gestión territorial sostenible y preservación de cuencas hidrográficas.</p></div>
+                    <div class="agenda-row"><time>14:00 – 14:30</time><div><strong>Ponencia 6</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>14:30 – 15:00</time><div><strong>Ponencia 7</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+
+                    <div class="agenda-axis"><h4>Eje 4 · Producción y zootecnia</h4><p>Agropecuaria de precisión y sistemas agroforestales sostenibles.</p></div>
+                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ponencia 8</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Ponencia 9</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row break"><time>16:00 – 16:30</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
+
+                    <div class="agenda-axis"><h4>Eje 5 · Economía y negocios sostenibles</h4><p>Economía circular, contabilidad, finanzas verdes y modelos de negocio sustentables.</p></div>
+                    <div class="agenda-row"><time>16:30 – 17:00</time><div><strong>Ponencia 10</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>17:00 – 17:30</time><div><strong>Ponencia 11</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+
+                    <div class="agenda-axis"><h4>Eje 6 · Derecho, sociedad y gobernanza</h4><p>Políticas públicas, bioética, gobernanza territorial y legislación ambiental.</p></div>
+                    <div class="agenda-row"><time>17:30 – 18:00</time><div><strong>Ponencia 12</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row key"><time>18:00</time><strong>Cierre de la primera jornada</strong></div>
+                </div>
+            </div>
+
+            <!-- DÍA 2 -->
+            <div class="tab-pane fade" id="dia2" role="tabpanel" aria-labelledby="tab-d2">
+                <div class="agenda">
+                    <div class="agenda-row key"><time>09:00 – 13:00</time><div><strong>Feria de Emprendimientos SMART4GREEN 2026</strong><span class="tbc">Presencial · lugar por confirmar</span></div></div>
+                    <div class="agenda-row break"><time>13:00 – 15:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso</strong></div>
+
+                    <div class="agenda-axis"><h4>Eje 7 · Innovación, emprendimiento y desarrollo sostenible</h4><p>Transferencia tecnológica, incubación de empresas sostenibles y soluciones innovadoras para comunidades amazónicas.</p></div>
+                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ponencia 13</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Ponencia 14</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row key"><time>16:00 – 16:30</time><strong>Conclusiones del I Seminario SMART4GREEN 2026</strong></div>
+                    <div class="agenda-row key"><time>16:30 – 17:00</time><strong>Clausura y cierre oficial del evento</strong></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CIFRAS -->
+<section class="stats" aria-label="El evento en cifras">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-6 col-md-3"><div class="stat-number" data-target="14">14</div><div class="stat-label">Ponencias programadas</div></div>
+            <div class="col-6 col-md-3"><div class="stat-number" data-target="7">7</div><div class="stat-label">Ejes temáticos</div></div>
+            <div class="col-6 col-md-3"><div class="stat-number" data-target="2">2</div><div class="stat-label">Jornadas académicas</div></div>
+            <div class="col-6 col-md-3"><div class="stat-number" data-target="1">1</div><div class="stat-label">Feria de emprendimientos</div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ORGANIZADORES -->
+<section id="organizadores" class="section">
+    <div class="container">
+        <div class="section-head center reveal">
+            <span class="kicker">Respaldo institucional</span>
+            <h2 class="section-title">Organizadores y redes académicas</h2>
+        </div>
+
+        <!-- Guarde los logos en assets/logos/ con los nombres indicados en cada src. -->
+        <h3 class="group-title">Institución organizadora</h3>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-5 reveal">
+                <article class="partner">
+                    <div class="partner-logo">
+                        <img src="assets/logos/espoch.png" alt="Logo ESPOCH" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                        <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                    </div>
+                    <h3>Escuela Superior Politécnica de Chimborazo</h3>
+                    <p>Sede Morona Santiago</p>
+                </article>
+            </div>
+        </div>
+
+        <!--
+            ENLACES DE PROYECTOS Y REDES
+            Escriba la dirección web de cada uno en el atributo href (donde dice href="").
+            Mientras un href esté vacío, la tarjeta se muestra normal pero sin enlace.
+        -->
+        <h3 class="group-title">Proyectos participantes</h3>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 reveal">
+                <!-- URL del Proyecto de investigación -->
+                <a class="partner-link" href="https://www.instagram.com/amazonaiot/" target="_blank" rel="noopener noreferrer">
+                    <article class="partner">
+                        <div class="partner-logo">
+                            <img src="assets/logos/AMAZON AIoT FINAL.png" alt="Logo AMAZON AIoT" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
+                        </div>
+                        <h3>Proyecto de investigación</h3>
+                        <p>Desarrollo e implementación de un Sistema Inteligente de Monitoreo de la Calidad Ambiental en Ecosistemas Amazónicos mediante Tecnologías IoT e Inteligencia Artificial.</p>
+                        <span class="visit">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></span>
+                    </article>
+                </a>
+            </div>
+            <div class="col-md-6 reveal">
+                <!-- URL del Proyecto de vinculación (Hidroponía Inteligente Amazónica) -->
+                <a class="partner-link" href="https://www.instagram.com/amazonaiot/" target="_blank" rel="noopener noreferrer">
+                    <article class="partner">
+                        <div class="partner-logo">
+                            <img src="assets/logos/LOGO3.png" alt="Logo Hidroponía Inteligente Amazónica" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
+                        </div>
+                        <h3>Proyecto de vinculación</h3>
+                        <p>Hidroponía Inteligente Amazónica.</p>
+                        <span class="visit">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></span>
+                    </article>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="group-title">Redes y grupos de investigación</h3>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4 reveal">
+                <!-- URL de la Red RAMAI -->
+                <a class="partner-link" href="" target="_blank" rel="noopener noreferrer">
+                    <article class="partner">
+                        <div class="partner-logo">
+                            <img src="assets/logos/ramai.jpeg" alt="Logo Red RAMAI" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
+                        </div>
+                        <h3>Red RAMAI</h3>
+                        <p>Red Agropecuaria, Medio Ambiente e Inteligencia Artificial</p>
+                        <span class="visit">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></span>
+                    </article>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+                <!-- URL del grupo IITMS -->
+                <a class="partner-link" href="" target="_blank" rel="noopener noreferrer">
+                    <article class="partner">
+                        <div class="partner-logo">
+                            <img src="assets/logos/logo IITMS.png" alt="Logo IITMS" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-microscope" aria-hidden="true"></i>
+                        </div>
+                        <h3>IITMS</h3>
+                        <p>Grupo de Investigación Innovación y Tecnología Morona Santiago</p>
+                        <span class="visit">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></span>
+                    </article>
+                </a>
+            </div>
+            <div class="col-md-6 col-lg-4 reveal">
+                <!-- URL del grupo AMAZONAIOT -->
+                <a class="partner-link" href="https://www.instagram.com/emprendimientosms2026/" target="_blank" rel="noopener noreferrer">
+                    <article class="partner">
+                        <div class="partner-logo">
+                            <img src="assets/logos/emprendi.png" alt="Logo AMAZONAIOT" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
+                        </div>
+                        <h3>Centro Consultor de Emprendimiento </h3>
+                        <p>ESPOCH Sede Morona Santiago</p>
+                        <span class="visit">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></span>
+                    </article>
+                </a>
+            </div>
+        </div>
+
+        <h3 class="group-title">Empresas patrocinadoras</h3>
+        <div class="row g-4 justify-content-center">
+            <!-- NEOIA: cuando tenga la web oficial, envuelva este bloque en <a class="partner-link" href="URL" target="_blank" rel="noopener noreferrer"> -->
+            <div class="col-6 col-lg-3 reveal">
+                <article class="partner sponsor">
+                    <div class="partner-logo">
+                        <img src="assets/logos/neoia.png" alt="Logo NEOIA" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                        <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <h3>NEOIA</h3>
+                </article>
+            </div>
+            <div class="col-6 col-lg-3 reveal">
+                <a class="partner-link" href="https://www.grupoelectrostore.com/" target="_blank" rel="noopener noreferrer">
+                    <article class="partner sponsor">
+                        <div class="partner-logo">
+                            <img src="assets/logos/electrostore.svg" alt="Logo Electrostore" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                        </div>
+                        <h3>Electrostore</h3>
+                    </article>
+                </a>
+            </div>
+            <!-- DRON: cuando tenga la web oficial, envuelva este bloque en <a class="partner-link" href="URL" target="_blank" rel="noopener noreferrer"> -->
+            <div class="col-6 col-lg-3 reveal">
+                <article class="partner sponsor">
+                    <div class="partner-logo">
+                        <img src="assets/logos/dron.png" alt="Logo DRON" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                        <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                    </div>
+                    <h3>DRON</h3>
+                </article>
+            </div>
+            <div class="col-6 col-lg-3 reveal">
+                <a class="partner-link" href="https://www.pcbmicrocircuitos.com/en" target="_blank" rel="noopener noreferrer">
+                    <article class="partner sponsor">
+                        <div class="partner-logo">
+                            <img src="assets/logos/Microcircuitos SAS.png" alt="Logo Microcircuitos" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                        </div>
+                        <h3>Microcircuitos</h3>
+                    </article>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="section section-alt">
+    <div class="container">
+        <div class="row g-5 align-items-stretch">
+            <div class="col-lg-6 reveal">
+                <span class="kicker">Canales oficiales</span>
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="mb-4">¿Tienes dudas sobre las ponencias, la inscripción al seminario o la participación en la feria? Escríbenos.</p>
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <div>
+                        <strong>Correo electrónico</strong>
+                        <a href="mailto:macarena.flores@espoch.edu.ec">macarena.flores@espoch.edu.ec</a><br>
+                        <a href="mailto:carlav.haro@espoch.edu.ec">carlav.haro@espoch.edu.ec</a><br>
+                        <a href="mailto:juanpablo.haro@espoch.edu.ec">juanpablo.haro@espoch.edu.ec</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <a href="https://wa.me/593996381808?text=Hola,%20deseo%20información%20sobre%20SMART4GREEN%202026" target="_blank" rel="noopener">+593 99 638 1808</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+                    <div>
+                        <strong>Facebook</strong>
+                        <a href="https://www.facebook.com/espochms?locale=es_LA" target="_blank" rel="noopener">ESPOCH Sede Morona Santiago</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                    <div>
+                        <strong>Sede</strong>
+                        <span>Macas, Morona Santiago, Ecuador — Escuela Superior Politécnica de Chimborazo</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 reveal">
+                <div class="cta-panel d-flex flex-column justify-content-center">
+                    <span class="kicker" style="color:#8FE0B5">Participación gratuita online</span>
+                    <h3 class="h2 mb-3">Inscríbete al seminario</h3>
+                    <p class="mb-4">Asegura tu lugar en las 14 ponencias online de SMART4GREEN 2026 completando el formulario de inscripción general.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="https://forms.gle/oieuCepQ93R2p2tTA" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-lg">Inscribirme al seminario</a>
+                        <a href="#emprendimiento" class="btn btn-ghost btn-lg">Participar en la feria</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="pt-5">
+    <div class="container">
+        <div class="row g-4 pb-4">
+            <div class="col-lg-5">
+                <a class="brand d-inline-block mb-3" href="#inicio" style="color:#8FE0B5">SMART<span style="color:#fff">4GREEN</span></a>
+                <p class="mb-0" style="max-width:26rem">I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible. Organizado por la ESPOCH Sede Morona Santiago.</p>
+            </div>
+            <div class="col-6 col-lg-3">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#ejes">Ejes temáticos</a></li>
+                    <li><a href="#speakers">Conferencistas</a></li>
+                    <li><a href="#programa">Programa</a></li>
+                    <li><a href="#emprendimiento">Feria de emprendimientos</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-4">
+                <h4>Fechas</h4>
+                <ul>
+                    <li>Seminario online · 16 y 17 de noviembre de 2026</li>
+                    <li>Feria presencial · 17 de noviembre · 09h00–13h00</li>
+                    <li><a href="https://sedemacas.espoch.edu.ec/" target="_blank" rel="noopener">sedemacas.espoch.edu.ec</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
-
-    <!-- HERO SECTION FULLSCREEN -->
-    <section id="inicio" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center justify-content-center text-center">
-                <div class="col-lg-10" data-aos="fade-up">
-                    <span class="hero-badge">
-                        <i class="fa-solid fa-globe me-2"></i> Seminario · 17 de noviembre de 2026
-                    </span>
-                    <h1 class="hero-title mb-3">SMART4GREEN 2026</h1>
-                    <p class="fs-4 fw-semibold text-light mb-2">I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible</p>
-                    <p class="text-info fw-bold mb-2">Tecnología • Producción • Economía • Sociedad • Ambiente</p>
-                    <p class="text-light mb-4">Feria de emprendimientos presencial · 09h00 a 13h00 · Lugar por confirmar</p>
-                    
-                    <!-- Countdown Timer -->
-                    <div class="countdown-container" id="countdown">
-                        <div class="countdown-box">
-                            <span class="countdown-num" id="days">00</span>
-                            <span class="countdown-label">Días</span>
-                        </div>
-                        <div class="countdown-box">
-                            <span class="countdown-num" id="hours">00</span>
-                            <span class="countdown-label">Horas</span>
-                        </div>
-                        <div class="countdown-box">
-                            <span class="countdown-num" id="minutes">00</span>
-                            <span class="countdown-label">Minutos</span>
-                        </div>
-                        <div class="countdown-box">
-                            <span class="countdown-num" id="seconds">00</span>
-                            <span class="countdown-label">Segundos</span>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-                        <a href="https://forms.gle/oieuCepQ93R2p2tTA"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="btn btn-outline-light btn-sm align-self-center">
-                            <i class="fa-solid fa-ticket me-1"></i> Inscripción general
-                        </a>
-                        </button>
-                        <a href="#callforpapers" class="btn btn-custom-primary">
-                            <i class="fa-solid fa-paper-plane me-2"></i> Enviar Manuscrito
-                        </a>
-                        <a href="#emprendimiento" class="btn btn-custom-secondary">
-                            <i class="fa-solid fa-lightbulb me-2"></i> Feria de Emprendimiento
-                        </a>
-                        <a href="#programa" class="btn btn-custom-outline">
-                            <i class="fa-regular fa-calendar-check me-2"></i> Ver Programa
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- HIGHLIGHT FEATURES STRIP -->
-    <section class="py-4 bg-white shadow-sm border-bottom">
-        <div class="container">
-            <div class="row text-center g-3">
-                <div class="col-6 col-md-3">
-                    <div class="d-flex align-items-center justify-content-center gap-2">
-                        <i class="fa-solid fa-earth-americas text-primary fs-3"></i>
-                        <span class="fw-bold text-dark">17 de noviembre de 2026</span>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="d-flex align-items-center justify-content-center gap-2">
-                        <i class="fa-solid fa-chalkboard-user text-success fs-3"></i>
-                        <span class="fw-bold text-dark">Feria Presencial</span>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="d-flex align-items-center justify-content-center gap-2">
-                        <i class="fa-solid fa-microchip text-info fs-3"></i>
-                        <span class="fw-bold text-dark">IA & Monitoreo IoT</span>
-                    </div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="d-flex align-items-center justify-content-center gap-2">
-                        <i class="fa-solid fa-people-arrows text-warning fs-3"></i>
-                        <span class="fw-bold text-dark">Networking Académico</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ACERCA DEL SEMINARIO -->
-    <section id="acerca" class="py-5">
-        <div class="container py-4">
-            <div class="row align-items-center g-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <span class="section-subtitle">Sobre el Evento</span>
-                    <h2 class="section-title text-start mb-4">Promoviendo la Investigación Científica y la Sostenibilidad Amazónica</h2>
-                    <p class="text-muted leading-relaxed">
-                        El <strong>SMART4GREEN 2026</strong> se constituye como un espacio internacional multidisciplinario diseñado para articular la investigación académica con el desarrollo sostenible en el contexto global y regional.
-                    </p>
-                    <p class="text-muted">
-                        Organizado por la <strong>ESPOCH Sede Morona Santiago</strong>, el seminario integra proyectos estratégicos como el <em>"Sistema Inteligente de Monitoreo de la Calidad Ambiental en Ecosistemas Amazónicos mediante IoT e Inteligencia Artificial"</em> y la <em>"Hidroponía Inteligente Amazónica"</em>.
-                    </p>
-                    <div class="row g-3 mt-3">
-                        <div class="col-sm-6">
-                            <div class="p-3 border rounded bg-white border-start border-4 border-success">
-                                <h6 class="fw-bold text-success mb-1">Impacto Ambiental</h6>
-                                <p class="small text-muted mb-0">Protección ecosistémica mediante sensores de última generación.</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="p-3 border rounded bg-white border-start border-4 border-primary">
-                                <h6 class="fw-bold text-primary mb-1">Transformación Digital</h6>
-                                <p class="small text-muted mb-0">Aplicación de modelos de Inteligencia Artificial.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <h5 class="fw-bold mb-3"><i class="fa-solid fa-users text-primary me-2"></i>Público Objetivo</h5>
-                        </div>
-                        <div class="col-6">
-                            <div class="p-3 bg-white rounded shadow-sm border text-center">
-                                <i class="fa-solid fa-user-graduate text-success fs-2 mb-2"></i>
-                                <h6 class="fw-bold mb-0">Investigadores y Docentes</h6>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="p-3 bg-white rounded shadow-sm border text-center">
-                                <i class="fa-solid fa-book-reader text-info fs-2 mb-2"></i>
-                                <h6 class="fw-bold mb-0">Estudiantes</h6>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="p-3 bg-white rounded shadow-sm border text-center">
-                                <i class="fa-solid fa-briefcase text-warning fs-2 mb-2"></i>
-                                <h6 class="fw-bold mb-0">Profesionales y Empresas</h6>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="p-3 bg-white rounded shadow-sm border text-center">
-                                <i class="fa-solid fa-building-columns text-primary fs-2 mb-2"></i>
-                                <h6 class="fw-bold mb-0">Instituciones Públicas / Privadas</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EJES TEMÁTICOS -->
-    <section id="ejes" class="py-5 bg-white">
-        <div class="container py-4">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Áreas de Investigación</span>
-                <h2 class="section-title">Ejes Temáticos del Evento</h2>
-            </div>
-            <div class="row g-4">
-                <!-- Eje 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-robot"></i></div>
-                        <h5 class="fw-bold">1. Tecnología, IA y Digitalización</h5>
-                        <p class="text-muted small">Inteligencia Artificial, Internet de las Cosas (IoT), Transformación Digital y Big Data aplicados al desarrollo.</p>
-                    </div>
-                </div>
-                <!-- Eje 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-leaf"></i></div>
-                        <h5 class="fw-bold">2. Ambiente y Sostenibilidad</h5>
-                        <p class="text-muted small">Monitoreo ambiental, conservación de la biodiversidad, cambio climático y resiliencia ecológica.</p>
-                    </div>
-                </div>
-                <!-- Eje 3 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-gem"></i></div>
-                        <h5 class="fw-bold">3. Recursos Naturales y Territorio</h5>
-                        <p class="text-muted small">Minería responsable, gestión territorial sostenible y preservación de cuencas hidrográficas.</p>
-                    </div>
-                </div>
-                <!-- Eje 4 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="400">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-wheat-awn"></i></div>
-                        <h5 class="fw-bold">4. Producción y Zootecnia</h5>
-                        <p class="text-muted small">Agropecuaria de precisión, hidroponía inteligente y sistemas agroforestales sostenibles.</p>
-                    </div>
-                </div>
-                <!-- Eje 5 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="500">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <h5 class="fw-bold">5. Economía y Negocios Sostenibles</h5>
-                        <p class="text-muted small">Economía circular, contabilidad ambiental, finanzas verdes y modelos de negocios sustentables.</p>
-                    </div>
-                </div>
-                <!-- Eje 6 -->
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="600">
-                    <div class="feature-card">
-                        <div class="feature-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-                        <h5 class="fw-bold">6. Derecho, Sociedad y Gobernanza</h5>
-                        <p class="text-muted small">Políticas públicas, bioética, gobernanza territorial y legislación ambiental.</p>
-                    </div>
-                </div>
-                <!-- Eje 7 -->
-                <div class="col-md-12 col-lg-12" data-aos="zoom-in" data-aos-delay="700">
-                    <div class="feature-card text-center border-success">
-                        <div class="feature-icon mx-auto"><i class="fa-solid fa-rocket"></i></div>
-                        <h5 class="fw-bold">7. Innovación, Emprendimiento y Desarrollo Sostenible</h5>
-                        <p class="text-muted small max-w-700 mx-auto">Modelos de transferencia tecnológica, incubación de empresas sostenibles y soluciones innovadoras para comunidades amazónicas.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- KEYNOTE SPEAKERS -->
-    <section id="speakers" class="py-5">
-        <div class="container py-4">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle"></span>
-                <h2 class="section-title">Keynote Speakers</h2>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <!-- Speaker 1 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="speaker-card">
-                        <div class="speaker-img-wrapper">
-                            <img src="assets/omar.jpg"
-                                 alt="Fotografía del keynote speaker"
-                                 class="speaker-img">
-                            <span class="speaker-flag" title="Italia">🇮🇹</span>
-                        </div>
-                        <div class="p-4">
-                            <h4 class="fw-bold mb-1">Ing. Omar Delgado, PhD.</h4>
-                            <p class="text-primary fw-semibold mb-2">Università della Calabria, Italia</p>
-                            <hr class="my-3">
-                            <p class="small text-muted mb-2"><strong>Especialidad:</strong> Inteligencia Artificial, Sistemas Inteligentes, Transformación Digital y Tecnologías Emergentes.</p>
-                            <button class="btn btn-sm btn-outline-primary rounded-pill mt-2" data-bs-toggle="modal" data-bs-target="#modalSpeaker1">Ver Bio Completa</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Speaker 2 -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="speaker-card h-100">
-                        <div class="speaker-img-wrapper">
-                            <i class="fa-solid fa-user-tie text-success" style="font-size: 5rem;" aria-hidden="true"></i>
-                        </div>
-                        <div class="p-4">
-                            <span class="badge bg-light text-success border mb-2">Por confirmar</span>
-                            <h4 class="fw-bold mb-1">Keynote Speaker 3</h4>
-                            <p class="text-primary fw-semibold mb-2">Afiliación por confirmar</p>
-                            <hr class="my-3">
-                            <p class="small text-muted mb-0"><strong>Tema:</strong> Por confirmar.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Speaker 3: por confirmar -->
-                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
-                    <div class="speaker-card h-100">
-                        <div class="speaker-img-wrapper">
-                            <i class="fa-solid fa-user-tie text-success" style="font-size: 5rem;" aria-hidden="true"></i>
-                        </div>
-                        <div class="p-4">
-                            <span class="badge bg-light text-success border mb-2">Por confirmar</span>
-                            <h4 class="fw-bold mb-1">Keynote Speaker 3</h4>
-                            <p class="text-primary fw-semibold mb-2">Afiliación por confirmar</p>
-                            <hr class="my-3">
-                            <p class="small text-muted mb-0"><strong>Tema:</strong> Por confirmar.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CALL FOR PAPERS -->
-    <section id="callforpapers" class="py-5 bg-white">
-        <div class="container py-4">
-            <div class="text-center mb-5" data-aos="fade-up">
-                <span class="badge bg-warning text-dark px-3 py-2 mb-3 fw-bold">Convocatoria Científica Abierta</span>
-                <h2 class="fw-bold display-6 mb-3">Call for Papers</h2>
-                <p class="lead text-muted mx-auto" style="max-width: 850px;">Invitamos a investigadores, académicos y profesionales a presentar trabajos originales e inéditos en las áreas temáticas de SMART4GREEN 2026.</p>
-            </div>
-            <div class="p-4 p-md-5 rounded-4 shadow-lg text-white mb-5" style="background: linear-gradient(135deg, #1B5E20 0%, #1565C0 100%);">
-                <div class="row align-items-center">
-                    <div class="col-lg-8" data-aos="fade-right">
-                        <h3 class="fw-bold mb-3">Recepción de Artículos Científicos</h3>
-                        <p class="mb-4">Los manuscritos presentados serán sometidos a evaluación académica. <strong></strong></p>
-                        <div class="row g-3">
-                            <div class="col-md-6"><i class="fa-solid fa-circle-check text-warning me-2"></i>Revisión Científica Rigurosa</div>
-                            <div class="col-md-6"><i class="fa-solid fa-circle-check text-warning me-2"></i>Publicación de Trabajos Aceptados</div>
-                            <div class="col-md-6"><i class="fa-solid fa-circle-check text-warning me-2"></i>Certificación Digital</div>
-                            <div class="col-md-6"><i class="fa-solid fa-circle-check text-warning me-2"></i>Difusión Académica</div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 text-center d-none d-lg-block" data-aos="fade-left">
-                        <i class="fa-solid fa-file-signature" style="font-size: 8rem; opacity: .25;" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-4 mb-5">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="p-4 rounded-4 border bg-light h-100">
-                        <span class="badge bg-success mb-3">Revista Oficial</span>
-                        <h3 class="fw-bold mb-2">INVESTIGO</h3>
-                        <p class="text-muted mb-3">Revista Científica Multidisciplinaria</p>
-                        <p class="fw-bold mb-4"><i class="fa-solid fa-barcode me-2"></i>ISSN 2953-6367</p>
-                        <a href="http://revistainvestigo.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary"><i class="fa-solid fa-arrow-up-right-from-square me-2"></i>Visitar Sitio Web Revista</a>
-                    </div>
-                </div>
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="p-4 h-100">
-                        <h3 class="fw-bold mb-4">Requisitos de Presentación de Documentos</h3>
-                        <ul class="list-unstyled mb-4">
-                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i><strong>Idioma oficial:</strong> Español.</li>
-                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i><strong>Extensión:</strong> Máximo 10 páginas utilizando la plantilla.</li>
-                            <li class="mb-3"><i class="fa-solid fa-check text-success me-2"></i><strong>Formatos requeridos:</strong> PDF y editable en Word (.docx).</li>
-                        </ul>
-                        <div class="d-flex flex-wrap gap-2">
-                            <a href="documentos/Plantilla para el desarrollo de artículos científicos InvestiGo.docx" class="btn btn-dark" download>
-                                <i class="fa-solid fa-download me-2"></i>Plantilla de Artículo
-                            </a>
-                            <a href="documentos/Ficha de Información para autores y evaluadores InvestiGo.docx" class="btn btn-outline-dark" download>
-                                <i class="fa-solid fa-download me-2"></i>Ficha de Autor
-                            </a>
-                            <a href="documentos/Originalidad y cesión de derechos de articulo.docx" class="btn btn-outline-dark" download>
-                                <i class="fa-solid fa-download me-2"></i>Declaración de Originalidad
-                            </a>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="text-center p-4 rounded-4 bg-light border" data-aos="fade-up">
-                <h4 class="fw-bold mb-2">¿Listo para presentar tu investigación?</h4>
-                <p class="text-muted mb-4">Consulta los requisitos y envía tu manuscrito para participar en SMART4GREEN 2026.</p>
-                <button class="btn btn-warning btn-lg fw-bold px-5 text-dark" data-bs-toggle="modal" data-bs-target="#modalSubmitPaper"><i class="fa-solid fa-file-arrow-up me-2"></i>Enviar Manuscrito Ahora</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- FECHAS IMPORTANTES (TIMELINE) -->
-    <section id="fechas" class="py-5">
-        <div class="container py-4">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Cronograma Académico</span>
-                <h2 class="section-title">Fechas Importantes</h2>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="badge bg-danger mb-2">Límite de Envío</span>
-                        <h5 class="fw-bold mb-1">Envío de Manuscritos</h5>
-                        <p class="text-primary fw-bold mb-0"><i class="fa-regular fa-calendar me-2"></i>30 de Octubre de 2026</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="badge bg-primary mb-2">Evaluación</span>
-                        <h5 class="fw-bold mb-1">Notificación de Aceptación</h5>
-                        <p class="text-primary fw-bold mb-0"><i class="fa-regular fa-calendar me-2"></i>06 de Noviembre de 2026</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="badge bg-warning text-dark mb-2">Cámara Lista</span>
-                        <h5 class="fw-bold mb-1">Entrega de Versión Final</h5>
-                        <p class="text-primary fw-bold mb-0"><i class="fa-regular fa-calendar me-2"></i>13 de Noviembre de 2026</p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <span class="badge bg-success mb-2">Evento Vivo</span>
-                        <h5 class="fw-bold mb-1">Desarrollo de SMART4GREEN 2026</h5>
-                        <p class="text-primary fw-bold mb-0"><i class="fa-regular fa-calendar me-2"></i>17 de noviembre de 2026</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FERIA DE EMPRENDIMIENTOS -->
-    <section id="emprendimiento" class="py-5">
-        <div class="container py-4">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">I Feria de Emprendimientos SMART4GREEN 2026</span>
-                <h2 class="section-title">Convierte una idea en una solución para el futuro.</h2>
-                <p class="text-muted mt-3 mb-0"><i class="fa-regular fa-calendar me-2"></i><strong>17 de noviembre de 2026 · 09h00–13h00</strong> · Modalidad presencial · Lugar por confirmar.</p>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-5" data-aos="fade-right">
-                    <div class="p-4 bg-white rounded-4 shadow-sm h-100">
-                        <h4 class="fw-bold text-success mb-3"><i class="fa-solid fa-seedling me-2"></i>Feria de Emprendimientos SMART4GREEN 2026</h4>
-                        <p class="text-muted mb-4">La Feria de Emprendimientos SMART4GREEN 2026 es un espacio para presentar ideas de negocio, proyectos innovadores y soluciones con potencial de impacto, vinculadas con la sostenibilidad, tecnología, producción, economía, sociedad y ambiente.</p>
-                        
-
-                        <h6 class="fw-bold text-dark"></h6>
-                        <ul class="small text-muted mb-4">
-                            <li><strong>¿Quiénes pueden participar?</strong> Estudiantes, docentes, investigadores y emprendedores podrán participar mediante equipos de hasta 4 integrantes.</li>
-                            <li>
-                                <strong>Áreas de participación:</strong> Sostenibilidad y ambiente · Tecnología e innovación · Producción y agroindustria ·  Minería sostenible · Economía y negocios · Innovación social y jurídica.
-                            </li>
-                        </ul>
-
-                        <div class="p-3 bg-light rounded-3 text-center">
-                            <p class="small text-muted mb-2">Descarga el formato obligatorio para la propuesta:</p>
-                            <a href="documentos/Plantilla_Feria_Emprendimientos_SMART4GREEN_2026.docx"
-                               class="btn btn-outline-success btn-sm"
-                               download>
-                                <i class="fa-solid fa-file-pdf me-1"></i> Descargar Formato
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Inscripción mediante Google Forms: allí se recopilan los datos y el PDF. -->
-                <div class="col-lg-7" data-aos="fade-left">
-                    <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm h-100 d-flex flex-column justify-content-center">
-                        <span class="badge bg-success align-self-start mb-3">Inscripciones abiertas</span>
-                        <h4 class="fw-bold mb-3">Inscripción a la Feria de Emprendimientos</h4>
-                        <p class="text-muted mb-3">Completa el formulario de inscripción y adjunta tu propuesta ejecutiva en PDF.</p>
-                        <p class="small text-muted mb-4">La propuesta se entrega dentro del formulario. Para subir el archivo, Google puede solicitar que inicies sesión con tu cuenta.</p>
-                        <a href="https://forms.gle/fv8FkEfTR3pD16yw5" target="_blank" rel="noopener noreferrer" class="btn btn-custom-primary btn-lg align-self-start">
-                            <i class="fa-solid fa-arrow-up-right-from-square me-2"></i> Inscribirme en la Feria
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROGRAMA DEL EVENTO -->
-    <section id="programa" class="py-5 bg-white">
-        <div class="container py-4">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">17 de noviembre de 2026 · Hora de Ecuador</span>
-                <h2 class="section-title">Programa del Evento</h2>
-                <p class="text-muted mt-3">Conferencias y ponencias científicas modalidad híbrida. La feria de emprendimientos se realizará en paralelo, de 09h00 a 13h00, en modalidad presencial. Lugar por confirmar.</p>
-            </div>
-            <div class="list-group max-w-800 mx-auto" aria-label="Programa del 17 de noviembre">
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-success">09h00–09h20</span><strong>Keynote 1</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-success">09h30–09h50</span><strong>Keynote 2</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-success">10h00–10h20</span><strong>Keynote 3</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">10h30–10h50</span><strong>Paper 1</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">11h00–11h20</span><strong>Paper 2</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">11h30–11h50</span><strong>Paper 3</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">12h00–12h20</span><strong>Paper 4</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-secondary">12h30–14h00</span><strong>Almuerzo libre</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">14h00–14h20</span><strong>Paper 5</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">14h30–14h50</span><strong>Paper 6</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">15h00–15h20</span><strong>Paper 7</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">16h30–16h50</span><strong>Paper 8</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">17h00–17h20</span><strong>Paper 9</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-primary">17h30–17h50</span><strong>Paper 10</strong></div>
-                    <div class="list-group-item p-3 d-flex flex-wrap align-items-center gap-2"><span class="badge bg-dark">18h00</span><strong>Cierre del evento</strong></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ESTADÍSTICAS ANIMADAS -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="row text-center g-4">
-                <div class="col-6 col-md-3">
-                    <div class="stat-number" data-target="250">0</div>
-                    <div class="fw-semibold">Participantes</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-number" data-target="10">0</div>
-                    <div class="fw-semibold">Instituciones Participantes</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-number" data-target="4">0</div>
-                    <div class="fw-semibold">Países Representados</div>
-                </div>
-                <div class="col-6 col-md-3">
-                    <div class="stat-number" data-target="20">0</div>
-                    <div class="fw-semibold">Artículos & Emprendimientos</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- ORGANIZADORES & REDES -->
-    <section class="py-5">
-        <div class="container py-4">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-subtitle">Respaldo Institucional</span>
-                <h2 class="section-title">Organizadores y Redes Académicas</h2>
-            </div>
-            <!-- Guarde los logos en assets/logos/ con los nombres indicados en cada src. -->
-            <h3 class="h4 fw-bold text-center mt-5 mb-4">Institución organizadora</h3>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-5" data-aos="zoom-in">
-                    <article class="partner-card">
-                        <div class="partner-logo-box">
-                            <img src="assets/logos/espoch.png" alt="Logo de Escuela Superior Politécnica de Chimborazo (ESPOCH)" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
-                            <i class="fa-solid fa-university" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="h5 fw-bold">Escuela Superior Politécnica de Chimborazo (ESPOCH)</h4>
-                        <p class="small text-muted mb-0">Sede Morona Santiago</p>
-                    </article>
-                </div>
-            </div>
-            <h3 class="h4 fw-bold text-center mt-5 mb-4">Proyectos participantes</h3>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-6" data-aos="zoom-in">
-                    <article class="partner-card">
-                        <div class="partner-logo-box">
-                            <img src="assets/logos/AMAZON AIoT FINAL.png" alt="Logo de Proyecto de Investigación" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
-                            <i class="fa-solid fa-diagram-project" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="h5 fw-bold">Proyecto de Investigación</h4>
-                        <p class="small text-muted mb-0">Desarrollo e Implementación de un Sistema Inteligente de Monitoreo de la Calidad Ambiental en Ecosistemas Amazónicos mediante Tecnologías IoT e Inteligencia Artificial.</p>
-                    </article>
-                </div>
-                <div class="col-md-6 col-lg-6" data-aos="zoom-in">
-                    <article class="partner-card">
-                        <div class="partner-logo-box">
-                            <img src="assets/logos/LOGO3.png" alt="Logo de Proyecto de Vinculación" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
-                            <i class="fa-solid fa-seedling" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="h5 fw-bold">Proyecto de Vinculación</h4>
-                        <p class="small text-muted mb-0">Hidroponía Inteligente Amazónica.</p>
-                    </article>
-                </div>
-            </div>
-            <h3 class="h4 fw-bold text-center mt-5 mb-4">Redes y Grupos de Investigación</h3>
-            <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in">
-                    <article class="partner-card">
-                        <div class="partner-logo-box">
-                            <img src="assets/logos/ramai.jpeg" alt="Logo de Red RAMAI" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
-                            <i class="fa-solid fa-network-wired" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="h5 fw-bold">Red RAMAI</h4>
-                        <p class="small text-muted mb-0">Red Agropecuaria, Medio Ambiente e Inteligencia Artificial</p>
-                    </article>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in">
-                    <article class="partner-card">
-                        <div class="partner-logo-box">
-                            <img src="assets/logos/iitms.png" alt="Logo de IITMS" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
-                            <i class="fa-solid fa-microscope" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="h5 fw-bold">IITMS</h4>
-                        <p class="small text-muted mb-0">Grupo de Investigación Innovación y Tecnología Morona Santiago</p>
-                    </article>
-                </div>
-                <div class="col-md-6 col-lg-4" data-aos="zoom-in">
-                    <article class="partner-card">
-                        <div class="partner-logo-box">
-                            <img src="assets/logos/AMAZON AIoT FINAL.png" alt="Logo de AMAZONAIOT" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
-                            <i class="fa-solid fa-microchip" aria-hidden="true"></i>
-                        </div>
-                        <h4 class="h5 fw-bold">AMAZONAIOT</h4>
-
-                    </article>
-                </div>
-            </div>
-            <!-- Patrocinadores: sustituya los archivos en assets/logos/ por los logos oficiales. -->
-            <!-- EMPRESAS PATROCINADORAS -->
-            <div class="mt-5" data-aos="fade-up">
-                <div class="text-center mb-4">
-                    <span class="section-subtitle">Patrocinio</span>
-                    <h3 class="h4 fw-bold">Empresas patrocinadoras</h3>
-                </div>
-
-                <div class="row g-4 justify-content-center">
-
-                    <!-- NEOIA -->
-                    <div class="col-sm-6 col-lg-3">
-                        <a href="https://URL-OFICIAL-DE-NEOIA"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-decoration-none text-reset d-block h-100">
-                            <article class="partner-card">
-                                <div class="partner-logo-box">
-                                    <img src="assets/logos/neoia.png"
-                                         alt="Logo de NEOIA"
-                                         onload="this.nextElementSibling.hidden=true"
-                                         onerror="this.style.display='none'">
-                                    <i class="fa-solid fa-handshake" aria-hidden="true"></i>
-                                </div>
-                                <h4 class="h5 fw-bold mb-0">NEOIA</h4>
-                            </article>
-                        </a>
-                    </div>
-
-                    <!-- ELECTROSTORE -->
-                    <div class="col-sm-6 col-lg-3">
-                        <a href="https://www.grupoelectrostore.com/"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-decoration-none text-reset d-block h-100">
-                            <article class="partner-card">
-                                <div class="partner-logo-box">
-                                    <img src="assets/logos/electrostore.svg"
-                                         alt="Logo de Electrostore"
-                                         onload="this.nextElementSibling.hidden=true"
-                                         onerror="this.style.display='none'">
-                                    <i class="fa-solid fa-handshake" aria-hidden="true"></i>
-                                </div>
-                                <h4 class="h5 fw-bold mb-0">Electrostore</h4>
-                            </article>
-                        </a>
-                    </div>
-
-                    <!-- DRON -->
-                    <div class="col-sm-6 col-lg-3">
-                        <a href="https://URL-OFICIAL-DE-DRON"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-decoration-none text-reset d-block h-100">
-                            <article class="partner-card">
-                                <div class="partner-logo-box">
-                                    <img src="assets/logos/dron.png"
-                                         alt="Logo de DRON"
-                                         onload="this.nextElementSibling.hidden=true"
-                                         onerror="this.style.display='none'">
-                                    <i class="fa-solid fa-handshake" aria-hidden="true"></i>
-                                </div>
-                                <h4 class="h5 fw-bold mb-0">DRON</h4>
-                            </article>
-                        </a>
-                    </div>
-
-                    <!-- MICROCIRCUITOS -->
-                    <div class="col-sm-6 col-lg-3">
-                        <a href="https://www.pcbmicrocircuitos.com/en"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="text-decoration-none text-reset d-block h-100">
-                            <article class="partner-card">
-                                <div class="partner-logo-box">
-                                    <img src="assets/logos/Microcircuitos SAS.png"
-                                         alt="Logo de Microcircuitos"
-                                         onload="this.nextElementSibling.hidden=true"
-                                         onerror="this.style.display='none'">
-                                    <i class="fa-solid fa-handshake" aria-hidden="true"></i>
-                                </div>
-                                <h4 class="h5 fw-bold mb-0">Microcircuitos</h4>
-                            </article>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-</section>
-
-    <!-- CONTACTO Y MAPA -->
-    <section id="contacto" class="py-5">
-        <div class="container py-4">
-            <div class="row g-5">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <span class="section-subtitle">Canales Oficiales</span>
-                    <h2 class="section-title text-start mb-4">Contáctate con Nosotros</h2>
-                    <p class="text-muted mb-4">Si tienes dudas sobre el envío de manuscritos o la postulación de emprendimientos, escríbenos a los correos institucionales.</p>
-                    
-                    <div class="d-flex align-items-center mb-3">
-                        <i class="fa-solid fa-envelope text-primary fs-4 me-3"></i>
-                        <div>
-                            <strong>Correos Electrónicos:</strong><br>
-                            <span class="text-muted small">macarena.flores@espoch.edu.ec | carlav.haro@espoch.edu.ec | juanpablo.haro@espoch.edu.ec</span>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center mb-4">
-                        <i class="fa-brands fa-facebook text-primary fs-4 me-3"></i>
-                        <div>
-                            <strong>Facebook Oficial:</strong><br>
-                            <a href="https://www.facebook.com/espochms?locale=es_LA" target="_blank" rel="noopener" class="text-decoration-none">ESPOCH Sede Morona Santiago</a>
-                        </div>
-                    </div>
-
-                    <div class="p-3 bg-white rounded border">
-                        <h6 class="fw-bold mb-2"><i class="fa-solid fa-location-dot me-2 text-danger"></i>Ubicación Sede</h6>
-                        <p class="small text-muted mb-0">Macas, Morona Santiago, Ecuador — Escuela Superior Politécnica de Chimborazo.</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6" data-aos="fade-left">
-                    <div class="bg-white p-4 rounded-4 shadow-sm">
-                        <h4 class="fw-bold mb-3">Enviar Mensaje Directo</h4>
-                        <form id="formContacto" novalidate>
-                            <div class="mb-3">
-                                <label class="form-label fw-semibold">Nombre Completo</label>
-                                <input type="text" class="form-control" required placeholder="Tu nombre">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label fw-semibold">Correo Electrónico</label>
-                                <input type="email" class="form-control" required placeholder="tu@correo.com">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label fw-semibold">Asunto</label>
-                                <input type="text" class="form-control" required placeholder="Consulta sobre manuscritos / evento">
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label fw-semibold">Mensaje</label>
-                                <textarea class="form-control" rows="4" required placeholder="Escribe tu mensaje..."></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-custom-secondary w-100">Enviar Consulta</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="bg-dark text-white pt-5 pb-3">
-        <div class="container">
-            <div class="row g-4 border-bottom border-secondary pb-4">
-                <div class="col-md-6">
-                    <h5 class="fw-bold text-success mb-2">SMART4GREEN 2026</h5>
-                    <p class="small text-light opacity-75">I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible. ESPOCH Sede Morona Santiago.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="small mb-1">Indexación e Investigación:</p>
-                    <span class="badge bg-secondary me-1">ERIHPLUS</span>
-                    <span class="badge bg-secondary me-1">Google Schoolar</span>
-                    <span class="badge bg-secondary">ISSN 2953-6367</span>
-                </div>
-            </div>
-            <div class="text-center pt-3 small text-light opacity-50">
-                &copy; 2026 SMART4GREEN. Todos los derechos reservados. Desarrollado para la Escuela Superior Politécnica de Chimborazo.
-            </div>
-        </div>
-    </footer>
-
-    <!-- BOTÓN DE WHATSAPP FLOTANTE -->
-    <a href="https://wa.me/593996381808?text=Hola,%20deseo%20información%20sobre%20SMART4GREEN%202026" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <!-- VOLVER ARRIBA -->
-    <a href="#inicio" class="back-to-top" id="backToTop" aria-label="Volver arriba">
-        <i class="fa-solid fa-arrow-up"></i>
-    </a>
-
-    <!-- MODALES -->
-    <!-- Modal Paper Submission -->
-    <div class="modal fade" id="modalSubmitPaper" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-heading fw-bold">Envío de Manuscrito Científico</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body small">
-                    <p>Para enviar su manuscrito, asegúrese de cumplir con la plantilla oficial y remitir los 3 documentos requeridos en formato digital a los correos oficializados:</p>
-                    <div class="p-2 bg-light rounded mb-3">
-                        <code>investigo@istra.edu.ec</code><br>
-                        <code>macarena.flores@espoch.edu.ec</code><br>
-                        <code>carlav.haro@espoch.edu.ec</code>
-                    </div>
-                    <p class="fw-bold mb-1">Documentos adjuntos obligatorios:</p>
-                    <ol>
-                        <li>Artículo Científico (Word y PDF).</li>
-                        <li>Ficha de información para autores.</li>
-                        <li>Declaración de originalidad y cesión de derechos.</li>
-                    </ol>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cerrar</button>
-                </div>
-            </div>
+        <div class="footer-bottom py-3 d-flex flex-wrap justify-content-between gap-2">
+            <span>&copy; 2026 SMART4GREEN · Escuela Superior Politécnica de Chimborazo.</span>
+            <span>Macas, Morona Santiago, Ecuador</span>
         </div>
     </div>
+</footer>
 
-    <!-- Bootstrap 5.3 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- AOS Library -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- FLOTANTES -->
+<a href="https://wa.me/593996381808?text=Hola,%20deseo%20información%20sobre%20SMART4GREEN%202026" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contacto por WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+</a>
+<a href="#inicio" class="back-to-top" id="backToTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
 
-    <!-- Custom Script ES6 -->
-    <script>
-        // AOS Animation Initialization
-        AOS.init({
-            duration: 800,
-            once: true
-        });
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.body.classList.remove('no-js');
 
-        // Countdown Timer Logic
-        const targetDate = new Date('2026-11-17T09:00:00-05:00').getTime();
-
-        function updateCountdown() {
-            const now = new Date().getTime();
-            const difference = targetDate - now;
-
-            if (difference > 0) {
-                const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-
-                document.getElementById('days').innerText = days < 10 ? '0' + days : days;
-                document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
-                document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
-                document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
-            }
+    // Tarjetas de proyectos/redes sin URL: se muestran sin enlace
+    document.querySelectorAll('a.partner-link').forEach(a => {
+        const href = (a.getAttribute('href') || '').trim();
+        if (!href || href === '#') {
+            a.classList.add('no-url');
+            a.removeAttribute('href');
+            a.setAttribute('tabindex', '-1');
         }
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
+    });
 
-        // Statistics Counter Animation
-        let animated = false;
-        window.addEventListener('scroll', () => {
-            const statsSection = document.querySelector('.stats-section');
-            if (!statsSection) return;
-            const position = statsSection.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.3;
-
-            if (position < screenPosition && !animated) {
-                const counters = document.querySelectorAll('.stat-number');
-                counters.forEach(counter => {
-                    const target = +counter.getAttribute('data-target');
-                    let count = 0;
-                    const speed = target / 50;
-
-                    const updateCount = () => {
-                        count += speed;
-                        if (count < target) {
-                            counter.innerText = Math.ceil(count);
-                            setTimeout(updateCount, 30);
-                        } else {
-                            counter.innerText = target + '+';
-                        }
-                    };
-                    updateCount();
-                });
-                animated = true;
+    // Cuenta regresiva
+    (function () {
+        const target = new Date('2026-11-16T08:00:00-05:00').getTime();
+        const end = new Date('2026-11-17T17:00:00-05:00').getTime();
+        const pad = n => String(n).padStart(2, '0');
+        const el = id => document.getElementById(id);
+        function tick() {
+            const now = Date.now();
+            const diff = target - now;
+            if (diff <= 0) {
+                el('countdownLabel').textContent = now < end ? '¡El evento está en curso!' : 'Gracias por acompañarnos';
+                el('countdown').hidden = true;
+                clearInterval(timer);
+                return;
             }
+            el('days').textContent = pad(Math.floor(diff / 864e5));
+            el('hours').textContent = pad(Math.floor(diff % 864e5 / 36e5));
+            el('minutes').textContent = pad(Math.floor(diff % 36e5 / 6e4));
+            el('seconds').textContent = pad(Math.floor(diff % 6e4 / 1e3));
+        }
+        const timer = setInterval(tick, 1000);
+        tick();
+    })();
 
-            // Scroll to top button visibility
-            const backToTop = document.getElementById('backToTop');
-            if (window.scrollY > 300) {
-                backToTop.classList.add('active');
-            } else {
-                backToTop.classList.remove('active');
-            }
-        });
+    // Animación de entrada y contadores
+    (function () {
+        const reveals = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) { reveals.forEach(r => r.classList.add('in')); return; }
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0.12 });
+        reveals.forEach(r => io.observe(r));
 
-        // Form Validation Handling
-        document.querySelectorAll('form').forEach(form => {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                    event.preventDefault();
-                    event.stopPropagation();
-                } else {
-                    event.preventDefault();
-                    alert('¡Formulario enviado correctamente! Nos pondremos en contacto pronto.');
-                    form.reset();
-                }
-                form.classList.add('was-validated');
+        const counters = document.querySelectorAll('.stat-number');
+        const co = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (!e.isIntersecting) return;
+                const node = e.target, goal = +node.dataset.target, t0 = performance.now(), dur = 1200;
+                const step = t => {
+                    const p = Math.min((t - t0) / dur, 1);
+                    node.textContent = Math.round(goal * (1 - Math.pow(1 - p, 3)));
+                    if (p < 1) requestAnimationFrame(step);
+                };
+                requestAnimationFrame(step);
+                co.unobserve(node);
             });
-        });
-    </script>
+        }, { threshold: 0.5 });
+        counters.forEach(c => co.observe(c));
+    })();
+
+    // Navegación: sombra al desplazar, enlace activo, botón volver arriba, cierre del menú móvil
+    (function () {
+        const nav = document.getElementById('siteNav');
+        const toTop = document.getElementById('backToTop');
+        const links = [...document.querySelectorAll('#navMenu .nav-link[href^="#"]')];
+        const sections = links.map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
+        function onScroll() {
+            const y = window.scrollY;
+            nav.classList.toggle('scrolled', y > 8);
+            toTop.classList.toggle('show', y > 500);
+            let current = null;
+            sections.forEach(s => { if (s.getBoundingClientRect().top <= 120) current = s.id; });
+            links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + current));
+        }
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        const menu = document.getElementById('navMenu');
+        menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+            if (menu.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(menu).hide();
+        }));
+    })();
+</script>
 </body>
 </html>
