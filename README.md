@@ -230,7 +230,78 @@
         .speaker-body h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: .25rem; }
         .speaker-body .affil { color: var(--ocean-700); font-weight: 500; font-size: .92rem; margin-bottom: 1rem; }
         .speaker-body .meta { font-size: .88rem; color: var(--ink-500); border-top: 1px solid var(--line); padding-top: 1rem; margin: 0; }
+        .speaker-country .flag { width: 20px; height: 15px; object-fit: cover; border-radius: 2px; margin-right: 6px; vertical-align: -2px; box-shadow: 0 0 0 1px rgba(17,24,39,.08); }
+        .agenda-row .talk { display: block; font-size: .88rem; font-style: italic; color: var(--forest-700); margin-top: .15rem; }
+        .agenda-row .talk.pending { color: var(--ink-500); }
+        .agenda-row .tbc .flag { width: 16px; height: 12px; object-fit: cover; border-radius: 2px; margin-right: 4px; vertical-align: -1px; }
         .badge-soft { background: var(--leaf-100); color: var(--forest-700); font-weight: 600; font-size: .72rem; padding: .35rem .65rem; border-radius: 999px; }
+
+        /* ---------- Carrusel de conferencistas (clases exclusivas spk-*) ---------- */
+        .spk-carousel {
+            --spk-gap: 1.5rem;
+            position: relative;
+            display: grid;
+            grid-template-columns: auto auto auto 1fr;
+            grid-template-areas: "track track track track" "prev status next .";
+            column-gap: .75rem;
+            align-items: center;
+            row-gap: .75rem;
+        }
+        .spk-track {
+            grid-area: track;
+            display: flex;
+            gap: var(--spk-gap);
+            overflow-x: auto;
+            overscroll-behavior-x: contain;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none;
+            padding: 6px 2px 28px;
+            border-radius: 18px;
+        }
+        .spk-track::-webkit-scrollbar { display: none; }
+        .spk-track:focus-visible { outline: 3px solid var(--gold-500); outline-offset: 4px; }
+        .spk-slide {
+            flex: 0 0 85%;
+            scroll-snap-align: start;
+            display: flex;
+        }
+        .spk-slide > .speaker { width: 100%; }
+        .spk-nav {
+            width: 44px; height: 44px;
+            border-radius: 50%;
+            border: 1px solid var(--line);
+            background: var(--surface);
+            color: var(--forest-700);
+            box-shadow: var(--shadow-md);
+            display: inline-flex; align-items: center; justify-content: center;
+            transition: background .2s var(--ease), color .2s var(--ease), opacity .2s var(--ease), transform .2s var(--ease);
+            z-index: 2;
+        }
+        .spk-nav:hover:not(:disabled) { background: var(--forest-700); color: #fff; transform: scale(1.05); }
+        .spk-nav:disabled { opacity: .35; cursor: default; box-shadow: none; }
+        .spk-prev { grid-area: prev; }
+        .spk-next { grid-area: next; }
+        .spk-status { grid-area: status; text-align: center; margin: 0; font-size: .88rem; font-weight: 500; color: var(--ink-500); font-variant-numeric: tabular-nums; }
+
+        @media (min-width: 768px) {
+            .spk-slide { flex-basis: calc((100% - var(--spk-gap)) / 2); }
+        }
+        @media (min-width: 992px) {
+            .spk-slide { flex-basis: calc((100% - 2 * var(--spk-gap)) / 3); }
+        }
+        @media (min-width: 1200px) {
+            .spk-carousel { grid-template-columns: 1fr auto 1fr; grid-template-areas: "track track track" ". status ."; }
+            .spk-nav { position: absolute; grid-area: auto; top: calc(50% - 40px); transform: translateY(-50%); }
+            .spk-nav:hover:not(:disabled) { transform: translateY(-50%) scale(1.05); }
+            .spk-prev { left: -22px; }
+            .spk-next { right: -22px; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            .spk-track { scroll-behavior: auto; }
+            .spk-nav, .spk-nav:hover:not(:disabled) { transition: none; }
+        }
 
         /* ---------- Fechas ---------- */
         .day-card { height: 100%; background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 2rem; }
@@ -281,6 +352,20 @@
         .agenda-axis { padding: 1rem 1.5rem; background: var(--leaf-100); border-top: 1px solid var(--line); border-left: 4px solid var(--forest-600); }
         .agenda-axis h4 { font-size: .82rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--forest-700); margin: 0 0 .15rem; }
         .agenda-axis p { font-size: .87rem; color: var(--ink-700); margin: 0; }
+        .fair-info .fair-deadline { background: var(--gold-500); border-color: var(--gold-500); color: var(--forest-900); font-weight: 700; }
+        .fair-deadline-note { display: flex; gap: .6rem; align-items: flex-start; background: #FBF1DE; color: #8A5D12; border-radius: 10px; padding: .75rem 1rem; font-size: .9rem; margin-bottom: 1.25rem; }
+        .fair-deadline-note i { margin-top: .2rem; }
+        .stream-panel { max-width: 920px; margin: 0 auto 2rem; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--ocean-700); border-radius: 16px; padding: 1.25rem 1.5rem; display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; box-shadow: var(--shadow-sm); }
+        .stream-icon { width: 48px; height: 48px; border-radius: 12px; background: var(--ocean-100); color: var(--ocean-700); display: inline-flex; align-items: center; justify-content: center; font-size: 1.3rem; flex-shrink: 0; }
+        .stream-info { flex: 1 1 260px; min-width: 0; }
+        .stream-info strong { display: block; color: var(--ink-900); font-weight: 700; }
+        .stream-info a { word-break: break-all; font-weight: 600; text-decoration: none; }
+        .stream-info a:hover { text-decoration: underline; }
+        .stream-info small { display: block; color: var(--ink-500); }
+        .stream-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+        .stream-actions .btn { padding: .65rem 1.2rem; }
+        .stream-actions .is-pending { opacity: .55; pointer-events: none; }
+        @media (max-width: 575.98px) { .stream-actions, .stream-actions .btn { width: 100%; } }
 
         /* ---------- Cifras ---------- */
         .stats { background: var(--forest-900); color: #fff; padding: 72px 0; }
@@ -533,8 +618,8 @@
                 <div class="row align-items-center g-4">
                     <div class="col-md-8">
                         <div class="d-flex align-items-center gap-3"><span class="axis-icon"><i class="fa-solid fa-rocket" aria-hidden="true"></i></span><span class="axis-num">EJE 07</span></div>
-                        <h3>Innovación, emprendimiento y desarrollo sostenible</h3>
-                        <p>Transferencia tecnológica, incubación de empresas sostenibles y soluciones innovadoras para comunidades amazónicas.</p>
+                        <h3>Innovación y emprendimiento </h3>
+                        <p>Jornada de actualización empresarial para graduados.</p>
                     </div>
                     <div class="col-md-4 text-md-end">
                         <a href="#emprendimiento" class="btn btn-gold">Conoce la feria <i class="fa-solid fa-arrow-right ms-2" aria-hidden="true"></i></a>
@@ -553,42 +638,220 @@
             <h2 class="section-title">Conferencistas invitados</h2>
             <p class="section-intro">La asignación de horarios y temas se confirmará en el programa académico.</p>
         </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-4 reveal">
-                <article class="speaker">
-                    <div class="speaker-photo">
-                        <img src="assets/omar.jpg" alt="Ing. Omar Delgado, PhD." loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
-                        <span class="speaker-country">🇮🇹 Italia</span>
-                    </div>
-                    <div class="speaker-body">
-                        <h3>Ing. Omar Delgado, PhD.</h3>
-                        <p class="affil">Università della Calabria</p>
-                        <p class="meta"><strong>Especialidad:</strong> Inteligencia artificial, sistemas inteligentes, transformación digital y tecnologías emergentes.</p>
-                    </div>
-                </article>
+
+        <!-- CARRUSEL DE PONENTES (14 tarjetas). Para completar un ponente, reemplace el contenido
+             de su tarjeta con la misma estructura de la tarjeta 1 (foto en assets/, país, nombre, afiliación y especialidad). -->
+        <div class="spk-carousel reveal" id="spkCarousel">
+            <button type="button" class="spk-nav spk-prev" id="spkPrev" aria-controls="spkTrack" aria-label="Ponentes anteriores">
+                <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+            </button>
+
+            <div class="spk-track" id="spkTrack" tabindex="0" role="region" aria-roledescription="carrusel" aria-label="Conferencistas invitados. Use las flechas izquierda y derecha del teclado para desplazarse.">
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 1 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/ponente1.png" alt="Dr. Raúl Antonio Aguilar" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">México</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Dr. Raúl Antonio Aguilar</h3>
+                            <p class="affil">Universidad Autónoma de Yucatán</p>
+                            <p class="meta"><strong>Especialidad:</strong> Ingeniería de Software e Informática Educativa.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 2 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/ponente2.jpg" alt="Dr. Oscar Zapata" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ca.png" srcset="https://flagcdn.com/w80/ca.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Canadá</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Dr. Oscar Zapata </h3>
+                            <p class="affil">University of Saskatchewan</p>
+                            <p class="meta"><strong>Especialidad:</strong> Socio-economic impacts of energy development.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 3 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/ponente.jpg" alt="Dr. Theofilos Toulkeridis " loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/gr.png" srcset="https://flagcdn.com/w80/gr.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Grecia</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Dr. Theofilos Toulkeridis </h3>
+                            <p class="affil">Aristotle University of Thessaloniki</p>
+                            <p class="meta"><strong>Especialidad:</strong> Geodinámica, Geología estructural, Volcanología, Tsunamis, Gestión de Riesgos, Geo-Arqueología, Espeleología.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 4 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Dra. Susan Ivonne Muñoz" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Chile</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Dr. Susan Ivonne Muñoz</h3>
+                            <p class="affil">Agencia de Sustentabilidad y Cambio Climático</p>
+                            <p class="meta"><strong>Especialidad:</strong> Sustentabilidad y Cambio Climático.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 5 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Dr. Joel Morales Salas" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Cuba</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Dr. Joel Morales Salas </h3>
+                            <p class="affil">Universidad Tecnológica de La Habana</p>
+                            <p class="meta"><strong>Especialidad:</strong> energías renovables, la eficiencia energética y la integración de fuentes limpias a la red eléctrica nacional.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 6 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Dr. Yoelkis Alexis Laborde" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Cuba</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Dr. Yoelkis Alexis Laborde</h3>
+                            <p class="affil">Centro de Aplicaciones Tecnológicas para el Desarrollo Sostenible CATEDES</p>
+                            <p class="meta"><strong>Especialidad:</strong> ...</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 7 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Ing. Wilson Zambrano" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/co.png" srcset="https://flagcdn.com/w80/co.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Colombia</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Ing. Wilson Zambrano</h3>
+                            <p class="affil">Institución Universitaria Antonio José Camacho</p>
+                            <p class="meta"><strong>Especialidad:</strong> ...</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 8 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Dr. Ramiro Ávila Santamaría" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Dr. Ramiro Ávila Santamaría </h3>
+                            <p class="affil">Universidad Andina Simón Bolívar</p>
+                            <p class="meta"><strong>Especialidad:</strong> ...</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 9 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Ing. Carlos Samaniego Tello" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Ing. Carlos Samaniego Tello</h3>
+                            <p class="affil">Analista Zonal de Fortalecimiento de Actores de la EPS</p>
+                            <p class="meta"><strong>Especialidad:</strong> ...</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 10 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/ponente10.jpg" alt="Ing. Víctor José Huilca" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Ing. Víctor José Huilca</h3>
+                            <p class="affil">ESPOCH, Sede Morona Santiago, Ecuador</p>
+                            <p class="meta"><strong>Especialidad:</strong> Ingeniería Electrónica y Automatización.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 11 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/ponente10.jfif" alt="Ing. Víctor José Huilca" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Ing. Luis Arias</h3>
+                            <p class="affil">ESPOCH, Sede Morona Santiago, Ecuador</p>
+                            <p class="meta"><strong>Especialidad:</strong> Zootecnia.</p>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 12 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Ing. Edwin Lozada" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Ing. Edwin Lozada</h3>
+                            <p class="affil">Docente ESPOCH, Sede Morona Santiago, Ecuador</p>
+                            <p class="meta"><strong>Especialidad:</strong> Zootecnia.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 13 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Ing. Jairo Andrés Becerra" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Ing. Jairo Andrés Becerra</h3>
+                            <p class="affil">Lowell Mineral Exploration</p>
+                            <p class="meta"><strong>Especialidad:</strong> Liderazgo Empresarial.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 14">
+                    <!-- PONENTE 14 -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/omar.jpg" alt="Ing. Danilo Tayupanda" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Ing. Danilo Tayupanda </h3>
+                            <p class="affil">Fundación Atasim.</p>
+                            <p class="meta"><strong>Especialidad:</strong> Emprendimiento.</p>
+                        </div>
+                    </article>
+                </div>
             </div>
-            <div class="col-md-6 col-lg-4 reveal">
-                <article class="speaker">
-                    <div class="speaker-photo"><i class="fa-solid fa-user placeholder" aria-hidden="true"></i></div>
-                    <div class="speaker-body">
-                        <span class="badge-soft mb-2 d-inline-block">Por confirmar</span>
-                        <h3>Conferencista invitado</h3>
-                        <p class="affil">Afiliación por confirmar</p>
-                        <p class="meta"><strong>Tema:</strong> Por confirmar.</p>
-                    </div>
-                </article>
-            </div>
-            <div class="col-md-6 col-lg-4 reveal">
-                <article class="speaker">
-                    <div class="speaker-photo"><i class="fa-solid fa-user placeholder" aria-hidden="true"></i></div>
-                    <div class="speaker-body">
-                        <span class="badge-soft mb-2 d-inline-block">Por confirmar</span>
-                        <h3>Conferencista invitado</h3>
-                        <p class="affil">Afiliación por confirmar</p>
-                        <p class="meta"><strong>Tema:</strong> Por confirmar.</p>
-                    </div>
-                </article>
-            </div>
+
+            <button type="button" class="spk-nav spk-next" id="spkNext" aria-controls="spkTrack" aria-label="Ponentes siguientes">
+                <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </button>
+
+            <p class="spk-status" id="spkStatus" aria-live="polite">Ponentes 1–3 de 14</p>
         </div>
     </div>
 </section>
@@ -634,6 +897,7 @@
                     <h2 class="section-title">Convierte una idea en una solución para el futuro</h2>
                     <p>Un espacio para presentar ideas de negocio, proyectos innovadores y soluciones con potencial de impacto, vinculadas con la sostenibilidad, la tecnología, la producción, la economía, la sociedad y el ambiente.</p>
                     <div class="fair-info">
+                        <span class="fair-deadline"><i class="fa-solid fa-hourglass-half me-1" aria-hidden="true"></i>Fecha límite de propuestas: 9 de noviembre 2026</span>
                         <span><i class="fa-regular fa-calendar me-1" aria-hidden="true"></i>17 de noviembre</span>
                         <span><i class="fa-regular fa-clock me-1" aria-hidden="true"></i>09h00–13h00</span>
                         <span><i class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Presencial · lugar por confirmar</span>
@@ -652,7 +916,8 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="fair-panel">
-                        <span class="badge-soft d-inline-block mb-3"><i class="fa-solid fa-circle me-1" style="font-size:.5rem;vertical-align:middle" aria-hidden="true"></i>Inscripciones abiertas</span>
+                        <span class="badge-soft d-inline-block mb-3" id="fairStatus"><i class="fa-solid fa-circle me-1" style="font-size:.5rem;vertical-align:middle" aria-hidden="true"></i>Inscripciones abiertas</span>
+                        <p class="fair-deadline-note"><i class="fa-regular fa-calendar-check" aria-hidden="true"></i><span>Recepción de propuestas hasta el <strong>lunes 9 de noviembre de 2026</strong>.</span></p>
                         <h3 class="mb-3">¿Cómo participar?</h3>
                         <div class="step"><span class="step-n">1</span><p>Descarga el formato obligatorio y redacta tu propuesta ejecutiva.</p></div>
                         <div class="step"><span class="step-n">2</span><p>Guárdala en PDF.</p></div>
@@ -678,7 +943,27 @@
         <div class="section-head center reveal">
             <span class="kicker">16 y 17 de noviembre · Hora de Ecuador (UTC−5)</span>
             <h2 class="section-title">Programa de ponencias</h2>
-            <p class="section-intro">14 ponencias de 30 minutos en modalidad online, organizadas en siete ejes temáticos. Los nombres de los conferencistas y los títulos se actualizarán conforme se confirme su participación.</p>
+            <p class="section-intro">14 ponencias de 30 minutos en modalidad online, organizadas en siete ejes temáticos. Los títulos marcados como «por confirmar» se actualizarán próximamente.</p>
+        </div>
+
+        <!-- ACCESO A LA TRANSMISIÓN Y DESCARGA DE LA AGENDA
+             Pegue el enlace de Google Drive de la agenda en el href de "btnAgenda" (donde dice href="").
+             Mientras esté vacío, el botón se muestra como "Agenda disponible pronto". -->
+        <div class="stream-panel reveal">
+            <span class="stream-icon"><i class="fa-solid fa-video" aria-hidden="true"></i></span>
+            <div class="stream-info">
+                <strong>Transmisión en vivo por Zoom</strong>
+                <a href="https://cedia.zoom.us/j/87425203248" target="_blank" rel="noopener noreferrer">cedia.zoom.us/j/87425203248</a>
+                <small>ID de reunión: 874 2520 3248 · Mismo enlace para ambas jornadas</small>
+            </div>
+            <div class="stream-actions">
+                <a href="https://cedia.zoom.us/j/87425203248" target="_blank" rel="noopener noreferrer" class="btn btn-brand">
+                    <i class="fa-solid fa-right-to-bracket me-2" aria-hidden="true"></i>Unirse por Zoom
+                </a>
+                <a href="https://drive.google.com/file/d/181kj1yDishu8GCUaiFcAfQHyLdQdeU9v/view?usp=sharing" id="btnAgenda" target="_blank" rel="noopener noreferrer" class="btn btn-outline-brand">
+                    <i class="fa-solid fa-file-arrow-down me-2" aria-hidden="true"></i>Descargar agenda
+                </a>
+            </div>
         </div>
 
         <div class="text-center mb-4">
@@ -695,31 +980,31 @@
                     <div class="agenda-row key"><time>08:00 – 09:00</time><strong>Registro e inauguración del I Seminario SMART4GREEN 2026</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 1 · Tecnología, IA y digitalización</h4><p>Inteligencia artificial, IoT, transformación digital y Big Data aplicados al desarrollo.</p></div>
-                    <div class="agenda-row"><time>09:00 – 09:30</time><div><strong>Ponencia 1</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>09:30 – 10:00</time><div><strong>Ponencia 2</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>10:00 – 10:30</time><div><strong>Ponencia 3</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>09:00 – 09:30</time><div><strong>Dr. Raúl Antonio Aguilar</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Universidad Autónoma de Yucatán · México</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>09:30 – 10:00</time><div><strong>Ing. Wilson Zambrano</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/co.png" srcset="https://flagcdn.com/w80/co.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Investigador, Institución Universitaria Antonio José Camacho · Colombia</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>10:00 – 10:30</time><div><strong>Ing. Víctor José Huilca</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Difusión de resultados del Proyecto de Investigación DIPI90</span></div></div>
                     <div class="agenda-row break"><time>10:30 – 11:00</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 2 · Ambiente y sostenibilidad</h4><p>Monitoreo ambiental, conservación de la biodiversidad, cambio climático y resiliencia ecológica.</p></div>
-                    <div class="agenda-row"><time>11:00 – 11:30</time><div><strong>Ponencia 4</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>11:30 – 12:00</time><div><strong>Ponencia 5</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>11:00 – 11:30</time><div><strong>Dra. Susan Ivonne Muñoz</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Coordinadora del área de financiamiento, Agencia de Sustentabilidad y Cambio Climático · Chile</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>11:30 – 12:00</time><div><strong>Dr. Yoelkis Alexis Laborde</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Subdirector científico, Centro de Aplicaciones Tecnológicas para el Desarrollo Sostenible (CATEDES) · Cuba</span><span class="talk pending">Tema por confirmar</span></div></div>
                     <div class="agenda-row break"><time>12:00 – 14:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso para el almuerzo</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 3 · Recursos naturales y territorio</h4><p>Minería responsable, gestión territorial sostenible y preservación de cuencas hidrográficas.</p></div>
-                    <div class="agenda-row"><time>14:00 – 14:30</time><div><strong>Ponencia 6</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>14:30 – 15:00</time><div><strong>Ponencia 7</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>14:00 – 14:30</time><div><strong>Dr. Joel Morales Salas</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director del Centro de Estudio de Tecnologías Energéticas Renovables, Universidad Tecnológica de La Habana · Cuba</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>14:30 – 15:00</time><div><strong>Dr. Theofilos Toulkeridis</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/gr.png" srcset="https://flagcdn.com/w80/gr.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Professor, Aristotle University of Thessaloniki · Grecia</span><span class="talk">Potencial geotérmico en el Ecuador</span></div></div>
 
                     <div class="agenda-axis"><h4>Eje 4 · Producción y zootecnia</h4><p>Agropecuaria de precisión y sistemas agroforestales sostenibles.</p></div>
-                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ponencia 8</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Ponencia 9</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ing. Luis Arias</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Producción de pastos alternativos</span></div></div>
+                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Ing. Edwin Lozada</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Rendimientos en la ganadería Charolaise</span></div></div>
                     <div class="agenda-row break"><time>16:00 – 16:30</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 5 · Economía y negocios sostenibles</h4><p>Economía circular, contabilidad, finanzas verdes y modelos de negocio sustentables.</p></div>
-                    <div class="agenda-row"><time>16:30 – 17:00</time><div><strong>Ponencia 10</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>17:00 – 17:30</time><div><strong>Ponencia 11</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>16:30 – 17:00</time><div><strong>Dr. Oscar Zapata</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ca.png" srcset="https://flagcdn.com/w80/ca.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Assistant Professor, School of Environment and Sustainability, University of Saskatchewan · Canadá</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>17:00 – 17:30</time><div><strong>Ing. Carlos Samaniego Tello</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Analista Zonal de Fortalecimiento de Actores de la EPS · Ecuador</span><span class="talk pending">Tema por confirmar</span></div></div>
 
                     <div class="agenda-axis"><h4>Eje 6 · Derecho, sociedad y gobernanza</h4><p>Políticas públicas, bioética, gobernanza territorial y legislación ambiental.</p></div>
-                    <div class="agenda-row"><time>17:30 – 18:00</time><div><strong>Ponencia 12</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>17:30 – 18:00</time><div><strong>Dr. Ramiro Ávila Santamaría</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente, Universidad Andina Simón Bolívar · Ecuador</span><span class="talk pending">Tema por confirmar</span></div></div>
                     <div class="agenda-row key"><time>18:00</time><strong>Cierre de la primera jornada</strong></div>
                 </div>
             </div>
@@ -730,11 +1015,10 @@
                     <div class="agenda-row key"><time>09:00 – 13:00</time><div><strong>Feria de Emprendimientos SMART4GREEN 2026</strong><span class="tbc">Presencial · lugar por confirmar</span></div></div>
                     <div class="agenda-row break"><time>13:00 – 15:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso</strong></div>
 
-                    <div class="agenda-axis"><h4>Eje 7 · Innovación, emprendimiento y desarrollo sostenible</h4><p>Transferencia tecnológica, incubación de empresas sostenibles y soluciones innovadoras para comunidades amazónicas.</p></div>
-                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ponencia 13</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Ponencia 14</strong><span class="tbc">Conferencista y tema por confirmar</span></div></div>
-                    <div class="agenda-row key"><time>16:00 – 16:30</time><strong>Conclusiones del I Seminario SMART4GREEN 2026</strong></div>
-                    <div class="agenda-row key"><time>16:30 – 17:00</time><strong>Clausura y cierre oficial del evento</strong></div>
+                    <div class="agenda-axis"><h4>Eje 7 · Innovación y emprendimiento</h4><p>Jornada de actualización empresarial para graduados.</p></div>
+                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ing. Jairo Andrés Becerra</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Lowell Mineral Exploration · Ecuador</span><span class="talk">Liderazgo empresarial</span></div></div>
+                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Ing. Danilo Tayupanda</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director, Fundación Atasim · Ecuador</span><span class="talk">Emprendimientos</span></div></div>
+                    <div class="agenda-row key"><time>16:00 – 16:30</time><strong>Clausura y cierre oficial del evento</strong></div>
                 </div>
             </div>
         </div>
@@ -1066,6 +1350,74 @@
         counters.forEach(c => co.observe(c));
     })();
 
+    // Carrusel de conferencistas: flechas, teclado, táctil e indicador de posición
+    (function () {
+        const track = document.getElementById('spkTrack');
+        if (!track) return;
+        const prev = document.getElementById('spkPrev');
+        const next = document.getElementById('spkNext');
+        const status = document.getElementById('spkStatus');
+        const slides = [...track.querySelectorAll('.spk-slide')];
+        const total = slides.length;
+        const reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+        const step = () => slides.length > 1 ? slides[1].offsetLeft - slides[0].offsetLeft : track.clientWidth;
+        const visible = () => Math.max(1, Math.round(track.clientWidth / step()));
+        const current = () => Math.round(track.scrollLeft / step());
+
+        function goTo(index) {
+            const i = Math.max(0, Math.min(index, total - 1));
+            track.scrollTo({ left: slides[i].offsetLeft - slides[0].offsetLeft, behavior: reduce.matches ? 'auto' : 'smooth' });
+        }
+
+        function update() {
+            const max = track.scrollWidth - track.clientWidth;
+            prev.disabled = track.scrollLeft <= 2;
+            next.disabled = track.scrollLeft >= max - 2;
+            const first = Math.min(current() + 1, total);
+            const last = Math.min(first + visible() - 1, total);
+            status.textContent = first === last ? `Ponente ${first} de ${total}` : `Ponentes ${first}–${last} de ${total}`;
+        }
+
+        prev.addEventListener('click', () => goTo(current() - 1));
+        next.addEventListener('click', () => goTo(current() + 1));
+
+        track.addEventListener('keydown', e => {
+            const keys = { ArrowLeft: current() - 1, ArrowRight: current() + 1, Home: 0, End: total - 1 };
+            if (e.key in keys) { e.preventDefault(); goTo(keys[e.key]); }
+        });
+
+        let raf = null;
+        track.addEventListener('scroll', () => {
+            if (raf) return;
+            raf = requestAnimationFrame(() => { raf = null; update(); });
+        }, { passive: true });
+        window.addEventListener('resize', update);
+        update();
+    })();
+
+    // Botón de agenda: si aún no tiene enlace de Drive, se muestra como pendiente
+    (function () {
+        const btn = document.getElementById('btnAgenda');
+        if (!btn) return;
+        const href = (btn.getAttribute('href') || '').trim();
+        if (!href || href === '#') {
+            btn.removeAttribute('href');
+            btn.classList.add('is-pending');
+            btn.setAttribute('aria-disabled', 'true');
+            btn.innerHTML = '<i class="fa-regular fa-clock me-2" aria-hidden="true"></i>Agenda disponible';
+        }
+    })();
+
+    // Feria: al vencer la fecha límite (9 de noviembre, 23:59 hora de Ecuador) cambia el estado
+    (function () {
+        const badge = document.getElementById('fairStatus');
+        if (!badge) return;
+        if (Date.now() > new Date('2026-11-09T23:59:59-05:00').getTime()) {
+            badge.innerHTML = '<i class="fa-solid fa-circle me-1" style="font-size:.5rem;vertical-align:middle" aria-hidden="true"></i>Recepción de propuestas cerrada';
+        }
+    })();
+
     // Navegación: sombra al desplazar, enlace activo, botón volver arriba, cierre del menú móvil
     (function () {
         const nav = document.getElementById('siteNav');
@@ -1091,3 +1443,4 @@
 </script>
 </body>
 </html>
+
