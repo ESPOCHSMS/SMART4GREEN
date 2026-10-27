@@ -1,4 +1,3 @@
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -41,7 +40,7 @@
       "eventStatus": "https://schema.org/EventScheduled",
       "location": [
         { "@type": "VirtualLocation", "url": "https://smart4green.espoch.edu.ec/" },
-        { "@type": "Place", "name": "ESPOCH Sede Morona Santiago", "address": { "@type": "PostalAddress", "addressLocality": "Macas", "addressRegion": "Morona Santiago", "addressCountry": "EC" } }
+        { "@type": "Place", "name": "Parque Central de Macas", "hasMap": "https://maps.app.goo.gl/63tp4onZ8zyFVset9", "address": { "@type": "PostalAddress", "addressLocality": "Macas", "addressRegion": "Morona Santiago", "addressCountry": "EC" } }
       ],
       "organizer": { "@type": "Organization", "name": "Escuela Superior Politécnica de Chimborazo – Sede Morona Santiago", "url": "https://sedemacas.espoch.edu.ec/" },
       "description": "Seminario online con 14 ponencias en siete ejes temáticos y feria presencial de emprendimientos."
@@ -51,7 +50,7 @@
     <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
     <!-- Bootstrap 5.3 + Font Awesome 6 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -174,6 +173,45 @@
         .countdown div { background: rgba(0,0,0,.18); border-radius: 12px; padding: .7rem .3rem; text-align: center; }
         .countdown strong { display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.6rem; font-weight: 800; color: #fff; line-height: 1.1; font-variant-numeric: tabular-nums; }
         .countdown span { font-size: .68rem; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.65); }
+
+        /* ---------- Distintivo 20 años ---------- */
+        .anniv { display: inline-flex; align-items: center; gap: 1.4rem; margin-bottom: 1.6rem; padding: 1rem 1.6rem 1rem 1.2rem; text-decoration: none;
+            background: linear-gradient(135deg, rgba(217,164,65,.16), rgba(217,164,65,.04)); border: 1px solid rgba(233,201,119,.45); border-radius: 20px;
+            box-shadow: 0 0 40px rgba(217,164,65,.18), inset 0 1px 0 rgba(255,255,255,.08); transition: transform .25s var(--ease), box-shadow .25s var(--ease); }
+        .anniv:hover { transform: translateY(-2px); box-shadow: 0 0 56px rgba(217,164,65,.3), inset 0 1px 0 rgba(255,255,255,.08); }
+        .anniv-num { position: relative; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: clamp(4.6rem, 9vw, 6.8rem); line-height: .85; letter-spacing: -.05em;
+            background: linear-gradient(160deg, #FFF1C2 0%, #E9C977 25%, #D9A441 50%, #A8741C 75%, #F1D27A 100%);
+            -webkit-background-clip: text; background-clip: text; color: transparent; padding-right: .12em;
+            filter: drop-shadow(0 4px 14px rgba(0,0,0,.25)); }
+        .anniv-num small { position: absolute; right: -.35em; top: .5em; font-family: 'Great Vibes', cursive; font-weight: 400; font-size: .36em; letter-spacing: 0;
+            background: linear-gradient(160deg, #FFF1C2, #E9C977 45%, #C8922F); -webkit-background-clip: text; background-clip: text; color: transparent; }
+        .anniv-text { border-left: 2px solid rgba(233,201,119,.6); padding-left: 1.4rem; line-height: 1.25; }
+        .anniv-text .tag { display: block; color: #E9C977; font-size: .78rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; margin-bottom: .35rem; }
+        .anniv-text strong { display: block; color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: clamp(1.15rem, 2vw, 1.45rem); letter-spacing: -.005em; }
+        .anniv-text .years { display: block; color: rgba(255,255,255,.75); font-size: .95rem; font-weight: 500; margin-top: .3rem; }
+        .anniv-text .years b { color: #E9C977; font-weight: 700; }
+
+        /* ---------- Aval académico ---------- */
+        .hero-aval { display: inline-flex; align-items: center; gap: .9rem; margin-top: 1.75rem; padding: .6rem .9rem .6rem .6rem; background: rgba(255,255,255,.08);
+            border: 1px solid rgba(255,255,255,.18); border-radius: 14px; text-decoration: none; transition: background .2s var(--ease); max-width: 100%; }
+        .hero-aval:hover { background: rgba(255,255,255,.14); }
+        .hero-aval img { height: 46px; width: auto; background: #F6F6F6; border-radius: 8px; padding: 5px 8px; flex-shrink: 0; }
+        .hero-aval small { display: block; color: rgba(255,255,255,.6); font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+        .hero-aval strong { color: #fff; font-weight: 600; font-size: .9rem; line-height: 1.3; }
+        .aval-card { display: flex; align-items: center; gap: 2rem; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--gold-500);
+            border-radius: var(--radius); padding: 1.75rem 2rem; text-decoration: none; color: inherit; transition: box-shadow .25s var(--ease), transform .25s var(--ease); }
+        .aval-card:hover { box-shadow: var(--shadow-md); transform: translateY(-3px); color: inherit; }
+        .aval-card img { width: 240px; max-width: 45%; height: auto; flex-shrink: 0; }
+        .aval-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .35rem; }
+        .aval-card p { font-size: .92rem; color: var(--ink-500); margin: 0 0 .6rem; }
+        .aval-card .visit { font-size: .85rem; font-weight: 600; color: var(--forest-700); }
+        .aval-card:hover .visit { text-decoration: underline; }
+        @media (max-width: 575.98px) {
+            .aval-card { flex-direction: column; align-items: flex-start; gap: 1rem; padding: 1.5rem; }
+            .aval-card img { width: 200px; max-width: 100%; }
+            .anniv { gap: 1rem; padding: .9rem 1.1rem .9rem .9rem; }
+            .anniv-text { padding-left: 1rem; }
+        }
 
         /* ---------- Franja de datos clave ---------- */
         .facts { background: var(--surface); border-bottom: 1px solid var(--line); }
@@ -335,6 +373,8 @@
         .step-n { width: 30px; height: 30px; border-radius: 50%; background: var(--leaf-100); color: var(--forest-700); font-weight: 700; font-size: .85rem; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .step p { margin: 0; color: var(--ink-700); font-size: .93rem; }
 
+        .map-link { text-decoration: underline; text-underline-offset: 2px; }
+
         /* ---------- Programa ---------- */
         .program-tabs { display: inline-flex; gap: .4rem; background: var(--surface-alt); border: 1px solid var(--line); border-radius: 12px; padding: .35rem; }
         .program-tabs .nav-link { color: var(--ink-700); font-weight: 600; font-size: .92rem; border-radius: 9px; padding: .6rem 1.2rem; }
@@ -486,9 +526,14 @@
     <div class="container">
         <div class="row align-items-center g-5">
             <div class="col-lg-7">
+                <a class="anniv" href="https://sedemacas.espoch.edu.ec/" target="_blank" rel="noopener" aria-label="ESPOCH Sede Morona Santiago, 20 años">
+                    <span class="anniv-num" aria-hidden="true">20<small>años</small></span>
+                    <span class="anniv-text"><span class="tag">Edición conmemorativa</span><strong>ESPOCH Sede Morona Santiago</strong><span class="years"><b>20 años</b> · 2006–2026</span></span>
+                </a>
+                <br>
                 <span class="eyebrow"><i class="fa-solid fa-leaf" aria-hidden="true"></i>I Edición · 16 y 17 de noviembre de 2026</span>
                 <h1>SMART<span class="accent">4GREEN</span> 2026</h1>
-                <p class="lead mb-3">I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible</p>
+                <p class="lead mb-3">I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible, en el marco de los <strong style="color:#E9C977">20 años de la ESPOCH Sede Morona Santiago</strong></p>
                 <p class="axes mb-4">Tecnología · Producción · Economía · Sociedad · Ambiente</p>
                 <div class="d-flex flex-wrap gap-3">
                     <a href="https://forms.gle/oieuCepQ93R2p2tTA" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-lg">
@@ -496,6 +541,10 @@
                     </a>
                     <a href="#programa" class="btn btn-ghost btn-lg">Ver programa</a>
                 </div>
+                <a class="hero-aval" href="https://vicerrectoradoinvestigacion.espoch.edu.ec/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/logos/vicerrectjj.png" alt="Logo Vicerrectorado de Investigación y Posgrado ESPOCH" onerror="this.remove()">
+                    <span><small>Evento avalado por</small><strong>Vicerrectorado de Investigación y Posgrado · ESPOCH</strong></span>
+                </a>
             </div>
             <div class="col-lg-5">
                 <div class="hero-card">
@@ -506,7 +555,7 @@
                         </div>
                         <div class="d-flex gap-3 mb-3">
                             <span class="icon"><i class="fa-solid fa-store" aria-hidden="true"></i></span>
-                            <div><dt>Feria presencial</dt><dd>Martes 17 · 09h00–13h00 · Lugar por confirmar</dd></div>
+                            <div><dt>Feria presencial</dt><dd>Martes 17 · 09h00–13h00 · <a class="map-link" href="https://maps.app.goo.gl/63tp4onZ8zyFVset9" target="_blank" rel="noopener noreferrer" style="color:#fff">Parque Central de Macas</a></dd></div>
                         </div>
                         <div class="d-flex gap-3">
                             <span class="icon"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
@@ -546,7 +595,7 @@
                 <span class="kicker">Sobre el evento</span>
                 <h2 class="section-title">Investigación científica al servicio de la sostenibilidad amazónica</h2>
                 <p>
-                    <strong>SMART4GREEN 2026</strong> es un espacio multidisciplinario e internacional que articula la investigación académica con el desarrollo sostenible, en diálogo entre el contexto global y la realidad regional amazónica.
+                    <strong>SMART4GREEN 2026</strong> es un espacio multidisciplinario e internacional, organizado en conmemoración de los <strong>20 años de la ESPOCH Sede Morona Santiago</strong>, que articula la investigación académica con el desarrollo sostenible, en diálogo entre el contexto global y la realidad regional amazónica.
                 </p>
                 <p>
                     A lo largo de dos jornadas, investigadores, docentes, estudiantes, profesionales y emprendedores comparten avances, experiencias y propuestas en tecnología, ambiente, producción, economía y sociedad, con el propósito de generar soluciones innovadoras para el territorio.
@@ -651,7 +700,7 @@
                     <!-- PONENTE 1 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/ponente1.PNG" alt="Dr. Raúl Antonio Aguilar" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/ponente1.png" alt="Dr. Raúl Antonio Aguilar" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">México</span>
                         </div>
                         <div class="speaker-body">
@@ -680,7 +729,7 @@
                     <!-- PONENTE 3 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/ponente.jpg" alt="Dr. Theofilos Toulkeridis " loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/ponente3.jpeg" alt="Dr. Theofilos Toulkeridis " loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/gr.png" srcset="https://flagcdn.com/w80/gr.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Grecia</span>
                         </div>
                         <div class="speaker-body">
@@ -694,7 +743,7 @@
                     <!-- PONENTE 4 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Dra. Susan Ivonne Muñoz" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/ponente4.png" alt="Dra. Susan Ivonne Muñoz" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Chile</span>
                         </div>
                         <div class="speaker-body">
@@ -708,13 +757,13 @@
                     <!-- PONENTE 5 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Dr. Joel Morales Salas" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/ponente5.jpeg" alt="Dr. Joel Morales Salas" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Cuba</span>
                         </div>
                         <div class="speaker-body">
                             <h3>Dr. Joel Morales Salas </h3>
                             <p class="affil">Universidad Tecnológica de La Habana</p>
-                            <p class="meta"><strong>Especialidad:</strong> energías renovables, la eficiencia energética y la integración de fuentes limpias a la red eléctrica nacional.</p>
+                            <p class="meta"><strong>Especialidad:</strong> Sistemas integrados de energía renovables, energía eólica, energía solar fotovoltaica, energía solar térmica .</p>
                         </div>
                     </article>
                 </div>
@@ -792,7 +841,7 @@
                     <!-- PONENTE 11 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/ponente10.jfif" alt="Ing. Víctor José Huilca" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/ponente11.png" alt="Ing. Luis Arias" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
@@ -879,7 +928,7 @@
                         <div class="cal"><span>NOV</span><strong>17</strong></div>
                         <div><h3>Martes 17 de noviembre</h3><small>Jornada 2</small></div>
                     </div>
-                    <div class="slot"><span class="mode mode-onsite">Presencial</span><div><strong>09h00 – 13h00</strong><p>Feria de Emprendimientos · Lugar por confirmar.</p></div></div>
+                    <div class="slot"><span class="mode mode-onsite">Presencial</span><div><strong>09h00 – 13h00</strong><p>Feria de Emprendimientos · <a href="https://maps.app.goo.gl/63tp4onZ8zyFVset9" target="_blank" rel="noopener noreferrer">Parque Central de Macas</a></p></div></div>
                     <div class="slot"><span class="mode mode-online">Online</span><div><strong>15h00 – 17h00</strong><p>Ponencias del eje 7, conclusiones y clausura.</p></div></div>
                 </div>
             </div>
@@ -900,9 +949,12 @@
                         <span class="fair-deadline"><i class="fa-solid fa-hourglass-half me-1" aria-hidden="true"></i>Fecha límite de propuestas: 9 de noviembre 2026</span>
                         <span><i class="fa-regular fa-calendar me-1" aria-hidden="true"></i>17 de noviembre</span>
                         <span><i class="fa-regular fa-clock me-1" aria-hidden="true"></i>09h00–13h00</span>
-                        <span><i class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Presencial · lugar por confirmar</span>
+                        <span><i class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Presencial · Parque Central de Macas</span>
                         <span><i class="fa-solid fa-users me-1" aria-hidden="true"></i>Equipos de hasta 4 integrantes</span>
                     </div>
+                    <a href="https://maps.app.goo.gl/63tp4onZ8zyFVset9" target="_blank" rel="noopener noreferrer" class="btn btn-gold mb-4">
+                        <i class="fa-solid fa-map-location-dot me-2" aria-hidden="true"></i>Abrir en Google Maps
+                    </a>
                     <h3 class="h6 fw-bold text-uppercase mb-3" style="letter-spacing:.1em">Áreas de participación</h3>
                     <ul class="fair-areas">
                         <li>Sostenibilidad y ambiente</li>
@@ -926,7 +978,7 @@
                             <a href="https://forms.gle/fv8FkEfTR3pD16yw5" target="_blank" rel="noopener noreferrer" class="btn btn-brand">
                                 Inscribirme en la feria <i class="fa-solid fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i>
                             </a>
-                            <a href="Documentos/Plantilla_Feria_Emprendimientos_SMART4GREEN_2026.docx" class="btn btn-outline-brand" download>
+                            <a href="documentos/Plantilla_Feria_Emprendimientos_SMART4GREEN_2026.docx" class="btn btn-outline-brand" download>
                                 <i class="fa-solid fa-file-word me-2" aria-hidden="true"></i>Descargar formato
                             </a>
                         </div>
@@ -982,20 +1034,20 @@
                     <div class="agenda-axis"><h4>Eje 1 · Tecnología, IA y digitalización</h4><p>Inteligencia artificial, IoT, transformación digital y Big Data aplicados al desarrollo.</p></div>
                     <div class="agenda-row"><time>09:00 – 09:30</time><div><strong>Dr. Raúl Antonio Aguilar</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Universidad Autónoma de Yucatán · México</span><span class="talk pending">Tema por confirmar</span></div></div>
                     <div class="agenda-row"><time>09:30 – 10:00</time><div><strong>Ing. Wilson Zambrano</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/co.png" srcset="https://flagcdn.com/w80/co.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Investigador, Institución Universitaria Antonio José Camacho · Colombia</span><span class="talk pending">Tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>10:00 – 10:30</time><div><strong>Ing. Víctor José Huilca</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Difusión de resultados del Proyecto de Investigación DIPI90</span></div></div>
+                    <div class="agenda-row"><time>10:00 – 10:30</time><div><strong>Ing. Víctor José Huilca</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Difusión de resultados del Proyecto de Investigación DIPI-90</span></div></div>
                     <div class="agenda-row break"><time>10:30 – 11:00</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 2 · Ambiente y sostenibilidad</h4><p>Monitoreo ambiental, conservación de la biodiversidad, cambio climático y resiliencia ecológica.</p></div>
-                    <div class="agenda-row"><time>11:00 – 11:30</time><div><strong>Dra. Susan Ivonne Muñoz</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Coordinadora del área de financiamiento, Agencia de Sustentabilidad y Cambio Climático · Chile</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>11:00 – 11:30</time><div><strong>Dra. Susan Ivonne Muñoz</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Coordinadora del área de financiamiento, Agencia de Sustentabilidad y Cambio Climático · Chile</span><span class="talk">Cambio Climático y Huellas Ambientales.</span></div></div>
                     <div class="agenda-row"><time>11:30 – 12:00</time><div><strong>Dr. Yoelkis Alexis Laborde</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Subdirector científico, Centro de Aplicaciones Tecnológicas para el Desarrollo Sostenible (CATEDES) · Cuba</span><span class="talk pending">Tema por confirmar</span></div></div>
                     <div class="agenda-row break"><time>12:00 – 14:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso para el almuerzo</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 3 · Recursos naturales y territorio</h4><p>Minería responsable, gestión territorial sostenible y preservación de cuencas hidrográficas.</p></div>
-                    <div class="agenda-row"><time>14:00 – 14:30</time><div><strong>Dr. Joel Morales Salas</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director del Centro de Estudio de Tecnologías Energéticas Renovables, Universidad Tecnológica de La Habana · Cuba</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>14:00 – 14:30</time><div><strong>Dr. Joel Morales Salas</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director del Centro de Estudio de Tecnologías Energéticas Renovables, Universidad Tecnológica de La Habana · Cuba</span><span class="talk">Fuentes Renovables de Energia: Retos y Oportunidades. Experiencia en Cuba.</span></div></div>
                     <div class="agenda-row"><time>14:30 – 15:00</time><div><strong>Dr. Theofilos Toulkeridis</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/gr.png" srcset="https://flagcdn.com/w80/gr.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Professor, Aristotle University of Thessaloniki · Grecia</span><span class="talk">Potencial geotérmico en el Ecuador</span></div></div>
 
                     <div class="agenda-axis"><h4>Eje 4 · Producción y zootecnia</h4><p>Agropecuaria de precisión y sistemas agroforestales sostenibles.</p></div>
-                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ing. Luis Arias</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Producción de pastos alternativos</span></div></div>
+                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ing. Luis Arias</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Gramalote, patrimonio vivo de Morona Santiago: aporte productivo, nutricional y socioeconómico a las familias ganaderas de la provincia.</span></div></div>
                     <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Ing. Edwin Lozada</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Rendimientos en la ganadería Charolaise</span></div></div>
                     <div class="agenda-row break"><time>16:00 – 16:30</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
 
@@ -1012,7 +1064,7 @@
             <!-- DÍA 2 -->
             <div class="tab-pane fade" id="dia2" role="tabpanel" aria-labelledby="tab-d2">
                 <div class="agenda">
-                    <div class="agenda-row key"><time>09:00 – 13:00</time><div><strong>Feria de Emprendimientos SMART4GREEN 2026</strong><span class="tbc">Presencial · lugar por confirmar</span></div></div>
+                    <div class="agenda-row key"><time>09:00 – 13:00</time><div><strong>Feria de Emprendimientos SMART4GREEN 2026</strong><span class="tbc">Presencial · Parque Central de Macas · <a href="https://maps.app.goo.gl/63tp4onZ8zyFVset9" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a></span></div></div>
                     <div class="agenda-row break"><time>13:00 – 15:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 7 · Innovación y emprendimiento</h4><p>Jornada de actualización empresarial para graduados.</p></div>
@@ -1057,6 +1109,20 @@
                     <h3>Escuela Superior Politécnica de Chimborazo</h3>
                     <p>Sede Morona Santiago</p>
                 </article>
+            </div>
+        </div>
+
+        <h3 class="group-title">Aval académico</h3>
+        <div class="row justify-content-center">
+            <div class="col-lg-9 reveal">
+                <a class="aval-card" href="https://vicerrectoradoinvestigacion.espoch.edu.ec/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/logos/vicerrect.png" alt="Logo Vicerrectorado de Investigación y Posgrado ESPOCH" loading="lazy">
+                    <div>
+                        <h3>Vicerrectorado de Investigación y Posgrado</h3>
+                        <p>SMART4GREEN 2026 cuenta con el aval académico del Vicerrectorado de Investigación y Posgrado de la Escuela Superior Politécnica de Chimborazo.</p>
+                        <span class="visit">Visitar sitio <i class="fa-solid fa-arrow-up-right-from-square ms-1" aria-hidden="true"></i></span>
+                    </div>
+                </a>
             </div>
         </div>
 
@@ -1204,8 +1270,7 @@
                     <div>
                         <strong>Correo electrónico</strong>
                         <a href="mailto:macarena.flores@espoch.edu.ec">macarena.flores@espoch.edu.ec</a><br>
-                        <a href="mailto:carlav.haro@espoch.edu.ec">carlav.haro@espoch.edu.ec</a><br>
-                        <a href="mailto:juanpablo.haro@espoch.edu.ec">juanpablo.haro@espoch.edu.ec</a>
+
                     </div>
                 </div>
                 <div class="contact-item">
@@ -1253,7 +1318,7 @@
         <div class="row g-4 pb-4">
             <div class="col-lg-5">
                 <a class="brand d-inline-block mb-3" href="#inicio" style="color:#8FE0B5">SMART<span style="color:#fff">4GREEN</span></a>
-                <p class="mb-0" style="max-width:26rem">I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible. Organizado por la ESPOCH Sede Morona Santiago.</p>
+                <p class="mb-0" style="max-width:26rem">I Seminario Multidisciplinario de Innovación para el Desarrollo Sostenible. Organizado por la ESPOCH Sede Morona Santiago, con el aval del <a href="https://vicerrectoradoinvestigacion.espoch.edu.ec/" target="_blank" rel="noopener" style="color:#E9C977">Vicerrectorado de Investigación y Posgrado</a>.</p>
             </div>
             <div class="col-6 col-lg-3">
                 <h4>Navegación</h4>
@@ -1268,7 +1333,7 @@
                 <h4>Fechas</h4>
                 <ul>
                     <li>Seminario online · 16 y 17 de noviembre de 2026</li>
-                    <li>Feria presencial · 17 de noviembre · 09h00–13h00</li>
+                    <li>Feria presencial · 17 de noviembre · 09h00–13h00 · <a href="https://maps.app.goo.gl/63tp4onZ8zyFVset9" target="_blank" rel="noopener">Parque Central de Macas</a></li>
                     <li><a href="https://sedemacas.espoch.edu.ec/" target="_blank" rel="noopener">sedemacas.espoch.edu.ec</a></li>
                 </ul>
             </div>
@@ -1443,4 +1508,5 @@
 </script>
 </body>
 </html>
+
 
