@@ -372,6 +372,16 @@
         .step { display: flex; gap: .9rem; margin-bottom: 1.1rem; }
         .step-n { width: 30px; height: 30px; border-radius: 50%; background: var(--leaf-100); color: var(--forest-700); font-weight: 700; font-size: .85rem; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .step p { margin: 0; color: var(--ink-700); font-size: .93rem; }
+        .fair-info .fair-closed-chip { background: rgba(255,255,255,.08); border-color: rgba(217,164,65,.6); color: #F3D9A4; font-weight: 600; }
+        .fair-status-closed { display: inline-flex; align-items: center; gap: .45rem; background: #FBF1DE; color: #8A5D12; font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: .4rem .8rem; border-radius: 999px; }
+        .fair-closed-note { display: flex; gap: .7rem; align-items: flex-start; background: var(--surface-alt); border: 1px solid var(--line); border-left: 4px solid var(--gold-500); color: var(--ink-700); border-radius: 12px; padding: .9rem 1.1rem; font-size: .92rem; margin-bottom: 1.25rem; }
+        .fair-closed-note i { color: #8A5D12; margin-top: .2rem; }
+        .fair-closed-note strong { color: var(--ink-900); }
+        .fair-count { display: flex; align-items: center; gap: 1.25rem; background: linear-gradient(135deg, var(--forest-700), var(--forest-600)); color: #fff; border-radius: 16px; padding: 1.25rem 1.5rem; margin-bottom: 1.5rem; box-shadow: var(--shadow-sm); }
+        .fair-count-num { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 3.4rem; font-weight: 800; line-height: 1; color: var(--gold-500); flex-shrink: 0; font-variant-numeric: tabular-nums; }
+        .fair-count-text strong { display: block; color: #fff; font-size: 1.1rem; font-weight: 700; line-height: 1.25; }
+        .fair-count-text span { display: block; color: rgba(255,255,255,.8); font-size: .88rem; margin-top: .2rem; }
+        @media (max-width: 400px) { .fair-count { flex-direction: column; align-items: flex-start; gap: .5rem; } .fair-count-num { font-size: 2.8rem; } }
 
         .map-link { text-decoration: underline; text-underline-offset: 2px; }
 
@@ -782,16 +792,30 @@
                     </article>
                 </div>
                 <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 15">
+                    <!-- PONENTE 15: Ing. Antony S. (NEOIA). Para la foto, guarde la imagen como assets/ponente15.jpg -->
+                    <article class="speaker">
+                        <div class="speaker-photo">
+                            <img src="assets/ponente_mexico.jpg" alt="Dr. Raúl Antonio Aguilar" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">México</span>
+                        </div>
+                        <div class="speaker-body">
+                            <h3>Dr. Raúl Antonio Aguilar</h3>
+                            <p class="affil">Universidad Autónoma de Yucatán</p>
+                            <p class="meta"><strong>Especialidad:</strong> Ingeniería de Software e Informática Educativa.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 15">
                     <!-- PONENTE 6 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Dr. Yoelkis Alexis Laborde" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/Yoelkis.jpeg" alt="Dr. Yoelkis Alexis Laborde" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Cuba</span>
                         </div>
                         <div class="speaker-body">
                             <h3>Dr. Yoelkis Alexis Laborde</h3>
                             <p class="affil">Centro de Aplicaciones Tecnológicas para el Desarrollo Sostenible CATEDES</p>
-                            <p class="meta"><strong>Especialidad:</strong> ...</p>
+                            <p class="meta"><strong>Especialidad:</strong> Cambio climático, adaptación y mitigación climática, gestión ambiental, resiliencia de zonas costeras vulnerables.</p>
                         </div>
                     </article>
                 </div>
@@ -799,13 +823,13 @@
                     <!-- PONENTE 8 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Dr. Ramiro Ávila Santamaría" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/jorge_verdugo.PNG" alt="Dr. Jorge Eduardo Verdugo" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
-                            <h3>Dr. Ramiro Ávila Santamaría </h3>
-                            <p class="affil">Universidad Andina Simón Bolívar</p>
-                            <p class="meta"><strong>Especialidad:</strong> ...</p>
+                            <h3>Dr. Jorge Eduardo Verdugo </h3>
+                            <p class="affil">Juez Provincial de la Sala Especializada Penal del Azuay</p>
+                            <p class="meta"><strong>Especialidad:</strong> Derechos humanos, mediación y resolución de conflictos, tecnologías de la información y comunicación (TIC) y gestión pública.</p>
                         </div>
                     </article>
                 </div>
@@ -813,13 +837,13 @@
                     <!-- PONENTE 9 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Ing. Carlos Samaniego Tello" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/omar.jpg" alt="Ing. Antony Paolo Oleas" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
-                            <h3>Ing. Carlos Samaniego Tello</h3>
-                            <p class="affil">Analista Zonal de Fortalecimiento de Actores de la EPS</p>
-                            <p class="meta"><strong>Especialidad:</strong> ...</p>
+                            <h3>Ing.Antony Paolo Oleas</h3>
+                            <p class="affil">Chief Product Officer (CPO) NEOIA S.A.S. </p>
+                            <p class="meta"><strong>Especialidad:</strong> Inteligencia artificial, ingeniería biomédica, diseño y modelado 3D, impresión 3D y fabricación digital.</p>
                         </div>
                     </article>
                 </div>
@@ -837,20 +861,22 @@
                         </div>
                     </article>
                 </div>
+
                 <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 15">
-                    <!-- PONENTE 15: Ing. Antony S. (NEOIA). Para la foto, guarde la imagen como assets/ponente15.jpg -->
+                    <!-- PONENTE 10 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/ponente15.jpg" alt="Ing. Antony S." loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/ponen.jpg" alt="Ing. Ing. Carlos Samaniego Tello" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
-                            <h3>Ing. Antony S.</h3>
-                            <p class="affil">NEOIA, Ecuador</p>
-                            <p class="meta"><strong>Ponencia:</strong> Biomateriales a partir de residuos, y un filtro para los ríos de la Amazonía.</p>
+                            <h3>Ing.  Carlos Samaniego Tello</h3>
+                            <p class="affil">Analista Zonal de Fortalecimiento de Actores de la EPS · Ecuador</p>
+                            <p class="meta"><strong>Especialidad:</strong>...</p>
                         </div>
                     </article>
                 </div>
+
                 <div class="spk-slide" role="group" aria-roledescription="diapositiva" aria-label="Ponente 1 de 15">
                     <!-- PONENTE 11 -->
                     <article class="speaker">
@@ -861,7 +887,7 @@
                         <div class="speaker-body">
                             <h3>Ing. Luis Arias</h3>
                             <p class="affil">ESPOCH, Sede Morona Santiago, Ecuador</p>
-                            <p class="meta"><strong>Especialidad:</strong> Zootecnia.</p>
+                            <p class="meta"><strong>Especialidad:</strong> Agronomía, agroforestería tropical, manejo sostenible de pasturas y pastos tropicales.</p>
                         </div>
                     </article>
                 </div>
@@ -870,7 +896,7 @@
                     <!-- PONENTE 12 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Ing. Edwin Lozada" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/lozada.PNG" alt="Ing. Edwin Lozada" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
@@ -884,13 +910,13 @@
                     <!-- PONENTE 13 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Ing. Darío Obando" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/Dario_obando.jpeg" alt="Ing. Darío Obando" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
                             <h3>Ing.  Darío Obando</h3>
-                            <p class="affil">Lowell Mineral Exploration</p>
-                            <p class="meta"><strong>Especialidad:</strong> Liderazgo Empresarial.</p>
+                            <p class="affil">Human Resources Senior Manager Lowell Mineral Exploration Ecuador S.A. </p>
+                            <p class="meta"><strong>Especialidad:</strong> Gestión del talento humano, dirección de operaciones empresariales, sostenibilidad corporativa.</p>
                         </div>
                     </article>
                 </div>
@@ -898,13 +924,13 @@
                     <!-- PONENTE 14 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Ing. Danilo Tayopanta" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/atasim.PNG" alt="Lic. Danilo Tayopanta" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
-                            <h3>Ing. Danilo Tayopanta </h3>
-                            <p class="affil">Fundación Atasim.</p>
-                            <p class="meta"><strong>Especialidad:</strong> Emprendimiento.</p>
+                            <h3>Lic. Danilo Tayopanta </h3>
+                            <p class="affil">Director Fundación Atasim.</p>
+                            <p class="meta"><strong>Especialidad:</strong> Desarrollo rural sostenible, cooperación internacional, agroecología, bioeconomía, emprendimiento comunitario.</p>
                         </div>
                     </article>
                 </div>
@@ -960,7 +986,7 @@
                     <h2 class="section-title">Convierte una idea en una solución para el futuro</h2>
                     <p>Un espacio para presentar ideas de negocio, proyectos innovadores y soluciones con potencial de impacto, vinculadas con la sostenibilidad, la tecnología, la producción, la economía, la sociedad y el ambiente.</p>
                     <div class="fair-info">
-                        <span class="fair-deadline"><i class="fa-solid fa-hourglass-half me-1" aria-hidden="true"></i>Fecha límite de propuestas: 9 de noviembre 2026</span>
+                        <span class="fair-closed-chip"><i class="fa-solid fa-lock me-1" aria-hidden="true"></i>Inscripciones cerradas · plazo finalizado el 9 de noviembre 2026</span>
                         <span><i class="fa-regular fa-calendar me-1" aria-hidden="true"></i>17 de noviembre</span>
                         <span><i class="fa-regular fa-clock me-1" aria-hidden="true"></i>09h00–13h00</span>
                         <span><i class="fa-solid fa-location-dot me-1" aria-hidden="true"></i>Presencial · Parque Central de Macas</span>
@@ -982,20 +1008,19 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="fair-panel">
-                        <span class="badge-soft d-inline-block mb-3" id="fairStatus"><i class="fa-solid fa-circle me-1" style="font-size:.5rem;vertical-align:middle" aria-hidden="true"></i>Inscripciones abiertas</span>
-                        <p class="fair-deadline-note"><i class="fa-regular fa-calendar-check" aria-hidden="true"></i><span>Recepción de propuestas hasta el <strong>lunes 9 de noviembre de 2026</strong>.</span></p>
-                        <h3 class="mb-3">¿Cómo participar?</h3>
-                        <div class="step"><span class="step-n">1</span><p>Descarga el formato obligatorio y redacta tu propuesta ejecutiva.</p></div>
-                        <div class="step"><span class="step-n">2</span><p>Guárdala en PDF.</p></div>
-                        <div class="step"><span class="step-n">3</span><p>Completa el formulario de inscripción y adjunta el PDF. Google puede pedirte iniciar sesión para subir el archivo.</p></div>
-                        <div class="d-flex flex-wrap gap-2 mt-4">
-                            <a href="https://forms.gle/fv8FkEfTR3pD16yw5" target="_blank" rel="noopener noreferrer" class="btn btn-brand">
-                                Inscribirme en la feria <i class="fa-solid fa-arrow-up-right-from-square ms-2" aria-hidden="true"></i>
-                            </a>
-                            <a href="Documentos/Plantilla_Feria_Emprendimientos_SMART4GREEN_2026.docx" class="btn btn-outline-brand" download>
-                                <i class="fa-solid fa-file-word me-2" aria-hidden="true"></i>Descargar formato
-                            </a>
+                        <span class="fair-status-closed mb-3"><i class="fa-solid fa-lock" aria-hidden="true"></i>Inscripciones cerradas</span>
+                        <p class="fair-closed-note" role="status"><i class="fa-regular fa-calendar-xmark" aria-hidden="true"></i><span>El plazo de inscripción para participar en la feria <strong>finalizó el lunes 9 de noviembre de 2026</strong>. Las inscripciones se encuentran cerradas. ¡Gracias a todos los equipos que enviaron su propuesta!</span></p>
+                        <div class="fair-count">
+                            <div class="fair-count-num" aria-hidden="true">22</div>
+                            <div class="fair-count-text">
+                                <strong>22 emprendimientos confirmados</strong>
+                                <span>participarán en la I Feria de Emprendimientos SMART4GREEN 2026.</span>
+                            </div>
                         </div>
+                        <h3 class="mb-3">¡Te esperamos en la feria!</h3>
+                        <div class="step"><span class="step-n"><i class="fa-regular fa-calendar" aria-hidden="true"></i></span><p><strong>Martes 17 de noviembre</strong>, de 09h00 a 13h00.</p></div>
+                        <div class="step"><span class="step-n"><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span><p>Modalidad presencial en el <a class="map-link" href="https://maps.app.goo.gl/63tp4onZ8zyFVset9" target="_blank" rel="noopener noreferrer">Parque Central de Macas</a>.</p></div>
+                        <div class="step mb-0"><span class="step-n"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span><p>Conoce ideas de negocio y soluciones innovadoras de estudiantes, docentes, investigadores y emprendedores.</p></div>
                     </div>
                 </div>
             </div>
@@ -1047,15 +1072,16 @@
 
                     <div class="agenda-axis"><h4>Eje 1 · Tecnología, IA y digitalización</h4><p>Inteligencia artificial, IoT, transformación digital y Big Data aplicados al desarrollo.</p></div>
                     <div class="agenda-row"><time>09:00 – 09:30</time><div><strong>Dr. César Palacios Arias</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/es.png" srcset="https://flagcdn.com/w80/es.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Skyworks Solutions, Inc. · España</span><span class="talk">Sensores de Microondas para Monitorización Celular en la Industria Alimenticia</span></div></div>
-                    <div class="agenda-row"><time>09:30 – 10:00</time><div><strong>Dr. Pablo Geovanny Palacios </strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Universidad  Diego Portales · Chile</span><span class="talk">Tema por confirmar</span></div></div>
-                    <div class="agenda-row"><time>10:00 – 10:30</time><div><strong>Ing. Víctor José Huilca</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Difusión de resultados del Proyecto de Investigación DIPI-90</span></div></div>
-                    <div class="agenda-row"><time>10:30 – 11:00</time><div><strong>Ing. Antony S.</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">NEOIA · Ecuador</span><span class="talk">Biomateriales a partir de residuos, y un filtro para los ríos de la Amazonía.</span></div></div>
-                    <div class="agenda-row break"><time>11:00 – 11:30</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
+                    <div class="agenda-row"><time>09:30 – 10:00</time><div><strong>Dr. Pablo Geovanny Palacios </strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Universidad  Diego Portales · Chile</span><span class="talk">Avances en comunicaciones ópticas inalámbricas para entornos interiores e industriales.</span></div></div>
+                    <div class="agenda-row"><time>10:00 – 10:30</time><div><strong>Dr. Raúl Antonio Aguilar</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Universidad Autónoma de Yucatán · México</span><span class="talk">La Deuda Técnica en Ingeniería de Software.</span></div></div>
+                    <div class="agenda-row"><time>10:30 – 11:00</time><div><strong>Ing. Víctor José Huilca</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Difusión de resultados del Proyecto de Investigación DIPI-90</span></div></div>
+                    <div class="agenda-row"><time>11:00 – 11:30</time><div><strong>Ing. Antony Paolo Oleas</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Chief Product Officer (CPO) NEOIA S.A.S. · Ecuador</span><span class="talk">Biomateriales de residuos - Filtros de metales pesados.</span></div></div>
+                    <div class="agenda-row break"><time>11:30 – 12:00</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 2 · Ambiente y sostenibilidad</h4><p>Monitoreo ambiental, conservación de la biodiversidad, cambio climático y resiliencia ecológica.</p></div>
-                    <div class="agenda-row"><time>11:30 – 12:00</time><div><strong>Dra. Susan Ivonne Muñoz</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Coordinadora del área de financiamiento, Agencia de Sustentabilidad y Cambio Climático · Chile</span><span class="talk">Cambio Climático y Huellas Ambientales.</span></div></div>
-                    <div class="agenda-row"><time>12:00 – 12:30</time><div><strong>Dr. Yoelkis Alexis Laborde</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Subdirector científico, Centro de Aplicaciones Tecnológicas para el Desarrollo Sostenible (CATEDES) · Cuba</span><span class="talk pending">Tema por confirmar</span></div></div>
-                    <div class="agenda-row break"><time>12:30 – 14:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso para el almuerzo</strong></div>
+                    <div class="agenda-row"><time>12:00 – 12:30</time><div><strong>Dra. Susan Ivonne Muñoz</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Coordinadora del área de financiamiento, Agencia de Sustentabilidad y Cambio Climático · Chile</span><span class="talk">Cambio Climático y Huellas Ambientales.</span></div></div>
+                    <div class="agenda-row"><time>12:30 – 13:00</time><div><strong>Dr. Yoelkis Alexis Laborde</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Subdirector científico, Centro de Aplicaciones Tecnológicas para el Desarrollo Sostenible (CATEDES) · Cuba</span><span class="talk">Potencial de la Biomasa como fuente renovable de energía en las principales industrias de la providencia Guantánamo.Cuba.</span></div></div>
+                    <div class="agenda-row break"><time>13:00 – 14:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso para el almuerzo</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 3 · Recursos naturales y territorio</h4><p>Minería responsable, gestión territorial sostenible y preservación de cuencas hidrográficas.</p></div>
                     <div class="agenda-row"><time>14:00 – 14:30</time><div><strong>Dr. Joel Morales Salas</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cu.png" srcset="https://flagcdn.com/w80/cu.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director del Centro de Estudio de Tecnologías Energéticas Renovables, Universidad Tecnológica de La Habana · Cuba</span><span class="talk">Fuentes Renovables de Energia: Retos y Oportunidades. Experiencia en Cuba.</span></div></div>
@@ -1071,7 +1097,7 @@
                     <div class="agenda-row"><time>17:00 – 17:30</time><div><strong>Ing. Carlos Samaniego Tello</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Analista Zonal de Fortalecimiento de Actores de la EPS · Ecuador</span><span class="talk pending">Tema por confirmar</span></div></div>
 
                     <div class="agenda-axis"><h4>Eje 6 · Derecho, sociedad y gobernanza</h4><p>Políticas públicas, bioética, gobernanza territorial y legislación ambiental.</p></div>
-                    <div class="agenda-row"><time>17:30 – 18:00</time><div><strong>Dr. Ramiro Ávila Santamaría</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente, Universidad Andina Simón Bolívar · Ecuador</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>17:30 – 18:00</time><div><strong>Dr. Jorge Eduardo Verdugo</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente, Universidad Andina Simón Bolívar · Ecuador</span><span class="talk">Derechos colectivos y de la naturaleza: una innovación en la constitución de 2008.</span></div></div>
                     <div class="agenda-row key"><time>18:00</time><strong>Cierre de la primera jornada</strong></div>
                 </div>
             </div>
@@ -1083,8 +1109,8 @@
                     <div class="agenda-row break"><time>13:00 – 15:00</time><strong><i class="fa-solid fa-utensils me-2" aria-hidden="true"></i>Receso</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 7 · Innovación y emprendimiento</h4><p>Jornada de actualización empresarial para graduados.</p></div>
-                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ing.  Darío Obando</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Lowell Mineral Exploration · Ecuador</span><span class="talk">Liderazgo empresarial</span></div></div>
-                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Ing. Danilo Tayopanta</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director, Fundación Atasim · Ecuador</span><span class="talk">Emprendimientos</span></div></div>
+                    <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ing.  Darío Obando</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Lowell Mineral Exploration · Ecuador</span><span class="talk">MÁS ALLÁ DEL TÍTULO: El poder de las habilidades blandas para construir el éxito profesional. </span></div></div>
+                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Lic. Danilo Tayopanta</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director, Fundación Atasim · Ecuador</span><span class="talk">Emprendimientos</span></div></div>
                     <div class="agenda-row key"><time>16:00 – 16:30</time><strong>Clausura y cierre oficial del evento</strong></div>
                 </div>
             </div>
@@ -1096,10 +1122,10 @@
 <section class="stats" aria-label="El evento en cifras">
     <div class="container">
         <div class="row text-center g-4">
-            <div class="col-6 col-md-3"><div class="stat-number" data-target="15">15</div><div class="stat-label">Ponencias programadas</div></div>
+            <div class="col-6 col-md-3"><div class="stat-number" data-target="16">16</div><div class="stat-label">Ponencias programadas</div></div>
             <div class="col-6 col-md-3"><div class="stat-number" data-target="7">7</div><div class="stat-label">Ejes temáticos</div></div>
             <div class="col-6 col-md-3"><div class="stat-number" data-target="2">2</div><div class="stat-label">Jornadas académicas</div></div>
-            <div class="col-6 col-md-3"><div class="stat-number" data-target="1">1</div><div class="stat-label">Feria de emprendimientos</div></div>
+            <div class="col-6 col-md-3"><div class="stat-number" data-target="22">22</div><div class="stat-label">Emprendimientos</div></div>
         </div>
     </div>
 </section>
@@ -1227,10 +1253,10 @@
         <h3 class="group-title">Empresas patrocinadoras</h3>
         <div class="row g-4 justify-content-center">
             <div class="col-6 col-lg-3 reveal">
-                <a class="partner-link" href="https://www.grupoelectrostore.com/" target="_blank" rel="noopener noreferrer">
+                <a class="partner-link" href="" target="_blank" rel="noopener noreferrer">
                     <article class="partner sponsor">
                         <div class="partner-logo">
-                            <img src="assets/logos/neoia.png" alt="Logo NEOIA" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
+                            <img src="assets/logos/LOGONEO.png" alt="Logo NEOIA" loading="lazy" onload="this.nextElementSibling.hidden=true" onerror="this.style.display='none'">
                             <i class="fa-solid fa-handshake" aria-hidden="true"></i>
                         </div>
                         <h3>NEOIA</h3>
