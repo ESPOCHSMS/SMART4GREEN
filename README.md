@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -837,12 +838,12 @@
                     <!-- PONENTE 9 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/omar.jpg" alt="Ing. Antony Paolo Oleas" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/antony.png" alt="Ing. Antony Paolo Oleas" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
-                            <h3>Ing.Antony Paolo Oleas</h3>
-                            <p class="affil">Chief Product Officer (CPO) NEOIA S.A.S. </p>
+                            <h3>Ing.Antony Paolo Oleas, Ing. Nimrod Sarmiento</h3>
+                            <p class="affil">Chief Product Officer (CPO) NEOIA S.A.S.,  </p>
                             <p class="meta"><strong>Especialidad:</strong> Inteligencia artificial, ingeniería biomédica, diseño y modelado 3D, impresión 3D y fabricación digital.</p>
                         </div>
                     </article>
@@ -866,13 +867,13 @@
                     <!-- PONENTE 10 -->
                     <article class="speaker">
                         <div class="speaker-photo">
-                            <img src="assets/ponen.jpg" alt="Ing. Ing. Carlos Samaniego Tello" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
+                            <img src="assets/tello.jpeg" alt="Ing. Ing. Carlos Samaniego Tello" loading="lazy" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'fa-solid fa-user placeholder'}))">
                             <span class="speaker-country"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Ecuador</span>
                         </div>
                         <div class="speaker-body">
                             <h3>Ing.  Carlos Samaniego Tello</h3>
                             <p class="affil">Analista Zonal de Fortalecimiento de Actores de la EPS · Ecuador</p>
-                            <p class="meta"><strong>Especialidad:</strong>...</p>
+                            <p class="meta"><strong>Especialidad:</strong> Desarrollo económico territorial, generación de valor agregado y promoción de oportunidades productivas sostenibles. </p>
                         </div>
                     </article>
                 </div>
@@ -1011,9 +1012,9 @@
                         <span class="fair-status-closed mb-3"><i class="fa-solid fa-lock" aria-hidden="true"></i>Inscripciones cerradas</span>
                         <p class="fair-closed-note" role="status"><i class="fa-regular fa-calendar-xmark" aria-hidden="true"></i><span>El plazo de inscripción para participar en la feria <strong>finalizó el lunes 9 de noviembre de 2026</strong>. Las inscripciones se encuentran cerradas. ¡Gracias a todos los equipos que enviaron su propuesta!</span></p>
                         <div class="fair-count">
-                            <div class="fair-count-num" aria-hidden="true">22</div>
+                            <div class="fair-count-num" aria-hidden="true">27</div>
                             <div class="fair-count-text">
-                                <strong>22 emprendimientos confirmados</strong>
+                                <strong>27 emprendimientos confirmados</strong>
                                 <span>participarán en la I Feria de Emprendimientos SMART4GREEN 2026.</span>
                             </div>
                         </div>
@@ -1075,7 +1076,7 @@
                     <div class="agenda-row"><time>09:30 – 10:00</time><div><strong>Dr. Pablo Geovanny Palacios </strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/cl.png" srcset="https://flagcdn.com/w80/cl.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Universidad  Diego Portales · Chile</span><span class="talk">Avances en comunicaciones ópticas inalámbricas para entornos interiores e industriales.</span></div></div>
                     <div class="agenda-row"><time>10:00 – 10:30</time><div><strong>Dr. Raúl Antonio Aguilar</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/mx.png" srcset="https://flagcdn.com/w80/mx.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Universidad Autónoma de Yucatán · México</span><span class="talk">La Deuda Técnica en Ingeniería de Software.</span></div></div>
                     <div class="agenda-row"><time>10:30 – 11:00</time><div><strong>Ing. Víctor José Huilca</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente ESPOCH, Sede Morona Santiago · Ecuador</span><span class="talk">Difusión de resultados del Proyecto de Investigación DIPI-90</span></div></div>
-                    <div class="agenda-row"><time>11:00 – 11:30</time><div><strong>Ing. Antony Paolo Oleas</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Chief Product Officer (CPO) NEOIA S.A.S. · Ecuador</span><span class="talk">Biomateriales de residuos - Filtros de metales pesados.</span></div></div>
+                    <div class="agenda-row"><time>11:00 – 11:30</time><div><strong>Ing. Antony Paolo Oleas, Ing.Antony Paolo Oleas, Ing. Nimrod Sarmiento</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Chief Product Officer (CPO) NEOIA S.A.S. · Ecuador</span><span class="talk">Biomateriales de residuos - Filtros de metales pesados.</span></div></div>
                     <div class="agenda-row break"><time>11:30 – 12:00</time><strong><i class="fa-solid fa-mug-hot me-2" aria-hidden="true"></i>Receso</strong></div>
 
                     <div class="agenda-axis"><h4>Eje 2 · Ambiente y sostenibilidad</h4><p>Monitoreo ambiental, conservación de la biodiversidad, cambio climático y resiliencia ecológica.</p></div>
@@ -1094,10 +1095,10 @@
 
                     <div class="agenda-axis"><h4>Eje 5 · Economía y negocios sostenibles</h4><p>Economía circular, contabilidad, finanzas verdes y modelos de negocio sustentables.</p></div>
                     <div class="agenda-row"><time>16:30 – 17:00</time><div><strong>Dr. Oscar Zapata</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ca.png" srcset="https://flagcdn.com/w80/ca.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Assistant Professor, School of Environment and Sustainability, University of Saskatchewan · Canadá</span><span class="talk">No es cuánto se paga, es cómo y cuándo: Economía circular, contabilidad, finanzas verdes y modelos de negocio vistos desde la decisión individual.</span></div></div>
-                    <div class="agenda-row"><time>17:00 – 17:30</time><div><strong>Ing. Carlos Samaniego Tello</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Analista Zonal de Fortalecimiento de Actores de la EPS · Ecuador</span><span class="talk pending">Tema por confirmar</span></div></div>
+                    <div class="agenda-row"><time>17:00 – 17:30</time><div><strong>Ing. Carlos Samaniego Tello</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Analista Zonal de Fortalecimiento de Actores de la EPS · Ecuador</span><span class="talk">Economia verde, oportunidades para el desarrollo sostenible de los emprendimientos amazónicos.</span></div></div>
 
                     <div class="agenda-axis"><h4>Eje 6 · Derecho, sociedad y gobernanza</h4><p>Políticas públicas, bioética, gobernanza territorial y legislación ambiental.</p></div>
-                    <div class="agenda-row"><time>17:30 – 18:00</time><div><strong>Dr. Jorge Eduardo Verdugo</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Docente, Universidad Andina Simón Bolívar · Ecuador</span><span class="talk">Derechos colectivos y de la naturaleza: una innovación en la constitución de 2008.</span></div></div>
+                    <div class="agenda-row"><time>17:30 – 18:00</time><div><strong>Dr. Jorge Eduardo Verdugo</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Juez Provincial de la Sala Especializada Penal del Azuay · Ecuador</span><span class="talk">Derechos colectivos y de la naturaleza: una innovación en la constitución de 2008.</span></div></div>
                     <div class="agenda-row key"><time>18:00</time><strong>Cierre de la primera jornada</strong></div>
                 </div>
             </div>
@@ -1110,7 +1111,7 @@
 
                     <div class="agenda-axis"><h4>Eje 7 · Innovación y emprendimiento</h4><p>Jornada de actualización empresarial para graduados.</p></div>
                     <div class="agenda-row"><time>15:00 – 15:30</time><div><strong>Ing.  Darío Obando</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Lowell Mineral Exploration · Ecuador</span><span class="talk">MÁS ALLÁ DEL TÍTULO: El poder de las habilidades blandas para construir el éxito profesional. </span></div></div>
-                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Lic. Danilo Tayopanta</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director, Fundación Atasim · Ecuador</span><span class="talk">Emprendimientos</span></div></div>
+                    <div class="agenda-row"><time>15:30 – 16:00</time><div><strong>Lic. Danilo Tayopanta</strong><span class="tbc"><img class="flag" src="https://flagcdn.com/w40/ec.png" srcset="https://flagcdn.com/w80/ec.png 2x" width="20" height="15" alt="" aria-hidden="true" onerror="this.remove()">Director, Fundación Atasim · Ecuador</span><span class="talk">Innovar desde el territorio: experiencias y desafíos del emprendimiento en la Amazonía.</span></div></div>
                     <div class="agenda-row key"><time>16:00 – 16:30</time><strong>Clausura y cierre oficial del evento</strong></div>
                 </div>
             </div>
@@ -1122,10 +1123,10 @@
 <section class="stats" aria-label="El evento en cifras">
     <div class="container">
         <div class="row text-center g-4">
-            <div class="col-6 col-md-3"><div class="stat-number" data-target="16">16</div><div class="stat-label">Ponencias programadas</div></div>
+            <div class="col-6 col-md-3"><div class="stat-number" data-target="17">17</div><div class="stat-label">Ponencias programadas</div></div>
             <div class="col-6 col-md-3"><div class="stat-number" data-target="7">7</div><div class="stat-label">Ejes temáticos</div></div>
             <div class="col-6 col-md-3"><div class="stat-number" data-target="2">2</div><div class="stat-label">Jornadas académicas</div></div>
-            <div class="col-6 col-md-3"><div class="stat-number" data-target="22">22</div><div class="stat-label">Emprendimientos</div></div>
+            <div class="col-6 col-md-3"><div class="stat-number" data-target="27">27</div><div class="stat-label">Emprendimientos</div></div>
         </div>
     </div>
 </section>
